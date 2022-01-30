@@ -2,7 +2,7 @@
 function init() {
   if (navigator.getBattery) {
     function displayBatteryStatus(battery) {
-      document.getElementById('charge').innerHTML = (battery.charging ? 'Ja' : 'Nein');
+      document.getElementById('charge').innerHTML = (battery.charging ? 'Yes' : 'No');
       document.getElementById('charging-time').innerHTML = battery.chargingTime;
       document.getElementById('discharging-time').innerHTML = battery.dischargingTime;
       document.getElementById('battery-level').innerHTML = battery.level;

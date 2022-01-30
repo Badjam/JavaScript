@@ -1,4 +1,3 @@
-'Bad putzen'
-'Einkaufen'
-'Aufräumen'
-'Rasen mähen'
+function showMessage() {
+    alert('Hello World');
+}
