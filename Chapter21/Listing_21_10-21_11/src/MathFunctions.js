@@ -4,7 +4,7 @@ const MathFunctions = {
       typeof number1 !== 'number' ||
       typeof number2 !== 'number'
     ) {
-      throw new TypeError('Nur Zahlen erlaubt.');
+      throw new TypeError('Only numbers allowed.');
     } else {
       if(number1 > number2) {
         return 1;

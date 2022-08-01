@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function (grunt) {
-  grunt.registerTask('example', 'Eine Beispiel-Task.', () => {
-    console.log('Hallo Welt')
-});
+  grunt.registerTask('example', 'A sample task.', () => {
+    console.log('Hello World')
+  });
 };
