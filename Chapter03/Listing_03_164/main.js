@@ -1,6 +1,6 @@
 'use strict';
 console.log(checkAge(22));                // true
-console.log(checkAge("Max Mustermann"));  // TypeError: Alter muss eine Zahl sein
+console.log(checkAge("John Doe"));  // TypeError: Alter muss eine Zahl sein
 console.log(checkAge(-22));               // Wird nicht aufgerufen
 function checkAge(age) {
   if(isNaN(parseFloat(age))) {

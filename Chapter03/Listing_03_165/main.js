@@ -5,7 +5,7 @@ try {
   console.log(error);                       // Wird nicht aufgerufen
 }
 try {
-  console.log(checkAge("Max Mustermann"));  // keine Ausgabe
+  console.log(checkAge("John Doe"));  // keine Ausgabe
 } catch(error) {
   console.log(error);                       // TypeError: Alter muss eine Zahl sein
 }

@@ -13,7 +13,7 @@ function init() {
         '<strong>' + file.name + '</strong>' +             // Dateiname
         ' (' + (file.type || "n/a") + ') - ' +             // Dateityp
         file.size + ' Bytes, ' +                           // Dateigröße
-        ' geändert am: ' +                                 // Änderungsdatum
+        ' last changed: ' +                                // Änderungsdatum
         file.lastModifiedDate.toLocaleDateString() +
         '</li>';
       }

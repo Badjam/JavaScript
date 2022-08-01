@@ -7,7 +7,7 @@ function createUser(username, email, password) {
   }
   return user;
 }
-const max = createUser('Max Mustermann', 'max.mustermann@example.com', 'secret');
-console.log(max.username);  // Max Mustermann
+const max = createUser('John Doe', 'max.mustermann@example.com', 'secret');
+console.log(max.username);  // John Doe
 console.log(max.email);     // max.mustermann@example.com
 console.log(max.password);  // secret

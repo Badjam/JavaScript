@@ -7,5 +7,5 @@ emitter.once( // Event abfangen
     console.log(`${firstName} ${lastName}`);
   }
 );
-emitter.emit('personAdded', 'Max', 'Mustermann'); // Ausgabe: "Max Mustermann"
+emitter.emit('personAdded', 'Max', 'Mustermann'); // Ausgabe: "John Doe"
 emitter.emit('personAdded', 'Moritz', 'Mustermann'); // Event-Listener wird nicht ausgelöst

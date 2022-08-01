@@ -1,7 +1,7 @@
 'use strict';
 function compareNumbers(numberAtI, numberAtJ) {
   if(numberAtI === numberAtJ) {
-    console.log(`Doppelte Zahl gefunden: ${numberAtI}`);
+    console.log(`Found duplicate: ${numberAtI}`);
   }
 }
 function checkNumber(numberAtI, numbers, i) {

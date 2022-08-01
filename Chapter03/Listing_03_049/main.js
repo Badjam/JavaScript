@@ -1,5 +1,5 @@
 'use strict';
-const name = 'Max Mustermann';
+const name = 'John Doe';
 const emptyString = '';
 console.log(!name); // Ausgabe: false
 console.log(!emptyString); // Ausgabe: true

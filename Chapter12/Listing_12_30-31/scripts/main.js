@@ -7,16 +7,16 @@ function init() {
   );
   const books = [
     {
-      'isbn': '978-3-8362-7272-8',
-      'title': 'Schrödinger programmiert Java',
+      'isbn': '978-1-4932-2286-5',
+      'title': 'JavaScript: The Comprehensive Guide',
       'author': 'Philip Ackermann'
     },
     {
-      'isbn': '978-3-8362-5687-2',
-      'title': 'Professionell entwickeln mit JavaScript',
-      'author': 'Philip Ackermann'
+      'isbn': '978-1-4932-2292-6',
+      'title': 'Node.js: The Comprehensive Guide',
+      'author': 'Sebastian Springer'
     }
-  ]
+  ]  
   request.onerror = function (event) {
     const error = event.target.error;
     console.error(error.message);

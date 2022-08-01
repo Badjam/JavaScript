@@ -15,7 +15,7 @@ function getPosition() {
     const infowindow = new google.maps.InfoWindow({
       map: map,
       position: googlePosition,
-      content: 'Sie befinden sich hier.'
+      content: 'You are here.'
     });
     map.setCenter(googlePosition);
   }

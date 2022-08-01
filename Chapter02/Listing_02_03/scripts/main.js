@@ -1,4 +1,4 @@
 function showMessage() {
-  alert('Hallo Welt');
+  alert('Hello World');
 }
 showMessage();

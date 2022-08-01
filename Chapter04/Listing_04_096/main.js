@@ -9,5 +9,5 @@ function checkUsername(userName) {
   }
 }
 checkUsername('Max');             // Fehler, da zu kurz
-checkUsername('Max Mustermann');  // Fehler, da zu lang
+checkUsername('John Doe');  // Fehler, da zu lang
 checkUsername('MaxMuste');        // gültig

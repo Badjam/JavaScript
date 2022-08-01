@@ -11,4 +11,4 @@ emitter.emit( // Event auslösen
   'personAdded', // Event-Name
   'Max', // Parameter firstName
   'Mustermann' // Parameter lastName
-); // Ausgabe: "Max Mustermann"
+); // Ausgabe: "John Doe"

@@ -2,7 +2,7 @@
 function init() {
   if (window.File && window.FileReader && window.FileList && window.Blob) {
     const progress = document.querySelector('.percent');
-    const reader = new FileReader();
+    let reader = new FileReader();
     function updateProgress(event) {
       if (event.lengthComputable) {
         const percentLoaded = Math.round((event.loaded / event.total) * 100);
@@ -13,6 +13,7 @@ function init() {
       }
     }
     function handleError(event) {
+      console.log(event)
       switch (event.target.error.code) {
         case event.target.error.NOT_FOUND_ERR:
           console.error('Datei wurde nicht gefunden');

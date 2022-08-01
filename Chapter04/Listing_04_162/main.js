@@ -4,7 +4,7 @@ function sayHello() {
   return function() {
     console.log('Welt');
     return function() {
-      console.log('Mein Name ist Max Mustermann.');
+      console.log('Mein Name ist John Doe.');
     }
   }
 }

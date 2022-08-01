@@ -8,35 +8,35 @@
 <body>
 <div class="container">
   <div class="row">
-    <label for="latitude">Breitengrad</label> <input id="latitude" type="text" value="">
+    <label for="latitude">Latitude</label> <input id="latitude" type="text" value="">
   </div>
   <div class="row">
-    <label for="longitude">Längengrad</label> <input id="longitude" type="text" value="">
+    <label for="longitude">Longitude</label> <input id="longitude" type="text" value="">
   </div>
   <div class="row">
-    <label for="altitude">Höhenlage</label> <input id="altitude" type="text" value="">
+    <label for="altitude">Altitude</label> <input id="altitude" type="text" value="">
   </div>
   <div class="row">
-    <label for="accuracy">Genauigkeit</label> <input id="accuracy" type="text" value="">
+    <label for="accuracy">Accuracy</label> <input id="accuracy" type="text" value="">
   </div>
   <div class="row">
-    <label for="altitudeAccuracy">Genauigkeit Höhenlage</label> <input id="altitudeAccuracy" type="text" value="">
+    <label for="altitudeAccuracy">Altitude accuracy</label> <input id="altitudeAccuracy" type="text" value="">
   </div>
   <div class="row">
-    <label for="heading">Richtung</label> <input id="heading" type="text" value="">
+    <label for="heading">Heading</label> <input id="heading" type="text" value="">
   </div>
   <div class="row">
-    <label for="speed">Geschwindigkeit</label> <input id="speed" type="text" value="">
+    <label for="speed">Speed</label> <input id="speed" type="text" value="">
   </div>
   <div class="row">
-    <label for="timestamp">Zeitstempel</label> <input id="timestamp" type="text" value="">
+    <label for="timestamp">Timestamp</label> <input id="timestamp" type="text" value="">
   </div>
   <div class="row">
-    <button onclick="getPosition()">Position ermitteln</button>
+    <button onclick="getPosition()">Get position</button>
   </div>
 </div>
 <div id="map-canvas"></div>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&language=en"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>

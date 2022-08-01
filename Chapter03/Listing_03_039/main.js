@@ -1,5 +1,5 @@
 'use strict';
 let name;
 console.log(name); // Ausgabe: undefined
-name = 'Max Mustermann';
-console.log(name); // Ausgabe: Max Mustermann
+name = 'John Doe';
+console.log(name); // Ausgabe: John Doe

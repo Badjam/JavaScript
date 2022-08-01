@@ -9,8 +9,8 @@ function validateEmail(e) {
   const emailElement = document.getElementById('email');
   const emailElement2 = document.getElementById('email2');
   if (emailElement.value !== emailElement2.value) {
-    emailElement.setCustomValidity('E-Mails müssen übereinstimmen.');
-    emailElement2.setCustomValidity('E-Mails müssen übereinstimmen.');
+    emailElement.setCustomValidity('E-mails must match.');
+    emailElement2.setCustomValidity('E-mails must match.');
   } else {
     emailElement.setCustomValidity('');
     emailElement2.setCustomValidity('');

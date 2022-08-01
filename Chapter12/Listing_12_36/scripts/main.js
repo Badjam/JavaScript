@@ -13,14 +13,14 @@ function init() {
       'readwrite'                                          // schreibender Zugriff
     );
     const objectStore = transaction.objectStore('Books');  // Öffnen des Objektspeichers
-    const request = objectStore.get('978-3-8362-7272-8');  // Lesen des Objekts
+    const request = objectStore.get('978-1-4932-2286-5');  // Lesen des Objekts
     request.onerror = (event) => {
       console.error(event.target.error.message);
     };
     request.onsuccess = (event) => {
       const book = request.result;
-      book.title = 'Schrödinger programmiert Java'         // Aktualisieren des Objekts
-        + ' - Das etwas andere Fachbuch';
+      // Update the object
+      book.title = ' JavaScript: The Comprehensive Guide by Philip Ackermann'
       const requestUpdate = objectStore.put(book);         // Speichern des Objekts
       requestUpdate.onerror = (event) => { };
       requestUpdate.onsuccess = (event) => { };
