@@ -1,43 +1,45 @@
 function init() {
-  // Containerelement für den Inhalt
+  // Container element for the content
   const contentElement = document.getElementById('content');
-  // Beispielinhalte, normalerweise per Ajax laden
+  // Sample content, normally loaded via Ajax
   const contents = {
-      home: {
-        content: 'Startseite'
-      },
-      services: {
-        content: 'Dienste'
-      },
-      skills: {
-        content: 'Skills'
-      },
-      aboutus: {
-        content: 'Über Uns'
-      },
-      contact: {
-        content: 'Kontakt'
-      }
-    };
-  // Event-Listener für die Links
+    home: {
+      content: 'Home'
+    },
+    services: {
+      content: 'Services'
+    },
+    skills: {
+      content: 'Skills'
+    },
+    aboutus: {
+      content: 'About Us'
+    },
+    contact: {
+      content: 'Contact'
+    }
+  };
+  // Event listener for the links
   function handleClick(event) {
     const pageName = event.target.getAttribute('href').split('/').pop();
     const content = contents[pageName];
-    contentElement.textContent = data.content;
+    updateContent(content.content);
     history.pushState(
-      content,
-      event.target.textContent,
-      event.target.href
+      content,                    // State object
+      event.target.textContent,   // Title
+      event.target.href           // URL
     );
     return event.preventDefault();
   }
-  // Registrieren der Event-Listener
+  // Register the event listeners
   const linkElements = document.getElementsByTagName('a');
   for (let i = 0; i < linkElements.length; i++) {
     linkElements[i].addEventListener('click', handleClick, true);
   }
+  function updateContent(content) {
+    contentElement.textContent = content;
+  }
 
-  // Initialer Zustand
   history.replaceState(
     {
       content: contentElement.textContent
@@ -47,7 +49,7 @@ function init() {
   );
 
   window.addEventListener('popstate', (event) => {
-    contentElement.textContent = data.content;
+    updateContent(event.state.content);
   });
 
 }
