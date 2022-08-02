@@ -46,30 +46,30 @@ function init() {
   ];
 
 
-  (function() {
-    let totalAlbumCount = 0;                        // Anzahl aller Alben
-    for(let i=0; i<artists.length; i++) {           // Für alle Künstler:
-      const albumCount = artists[i].albums.length;  // Ermittle die Anzahl ...
-                                                    // ... der Alben, ...
-      totalAlbumCount += albumCount;                // ... und erhöhe die ...
-                                                    // ... Gesamtanzahl.
+  (function () {
+    let totalAlbumCount = 0;                        // Number of all albums
+    for (let i = 0; i<artists.length; i++) {        // For all artists:
+      const albumCount = artists[i].albums.length;  // Get the number of ...
+      // ... of albums ...
+      totalAlbumCount += albumCount;                // ... and increase the ...
+      // ... total number.
     }
-    console.log(totalAlbumCount);
+    console.log(totalAlbumCount);                   // 8    
   })();
 
-  (function() {
-    const totalAlbumCount = artists.reduce(         // Die reduce()-Methode ...
-      function(                                   // ... erwartet eine Callback-Funktion
-        result,                                   // (1) Aktuelles Zwischenergebnis.
-        artist,                                   // (2) Das jeweilige Element.
-        index,                                    // (3) Der Index des Elements im Array.
-        artists                                   // (4) Das Array.
+  (function () {
+    const totalAlbumCount = artists.reduce(       // The reduce()-method ...
+      function (                                  // ... expects a callback function.
+        result,                                   // (1) current intermediate result
+        artist,                                   // (2) the respective element
+        index,                                    // (3) the index of the element in the array
+        artists                                   // (4) the array
       ) {
-        const albumCount = artist.albums.length;    // Anzahl Alben des Künstlers.
-        return result + albumCount;               // Gesamtanzahl erhöhen.
+        const albumCount = artist.albums.length;  // number of albums of the artist
+        return result + albumCount;               // Increase total count
       },
-      0                                           // Anzahl aller Alben.
+      0                                           // Number of all albums
     );
-    console.log(totalAlbumCount);
+    console.log(totalAlbumCount);                 // 8
   })();
 }

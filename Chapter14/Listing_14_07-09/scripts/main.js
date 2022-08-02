@@ -25,25 +25,26 @@ function init() {
 
 
   (function() {
-    const before2000 = [];
-    for(let i=0, l=albums.length; i<l; i++) {   // Für alle Alben:
-      if(albums[i].year < 2000) {               // Prüfe, ob vor 2000 veröffentlicht.
-        before2000.push(albums[i]);             // Falls ja, in Ergebnis übernehmen.
+    const albumsBefore2000 = [];
+    for(let i=0; i<albums.length; i++) {        // For all albums:
+      if(albums[i].year < 2000) {               // Check if published before 2000.
+        albumsBefore2000.push(albums[i]);       // If yes, include in result.
       }
     }
-    console.log(before2000);
+    console.log(albumsBefore2000.length);       // 1    
   })();
 
   (function() {
-    const before2000 = albums.filter(  // Die filter()-Methode erwartet ...
-      function(                      // ... eine Callback-Funktion.  
-        album,                       // (1) Das jeweilige Element.
-        index,                       // (2) Der Index des Elements im Array.
-        albums)                      // (3) Das Array.
-      {                              // Die Methode liefert nur die Alben, ...
-        return album.year < 2000;    // ... die vor 2000 veröffentlicht wurden.
+    const albumsBefore2000 = albums.filter(  // The filter() method expects ...
+      (                                      // ... a callback function.  
+        album,                               // (1) the respective element
+        index,                               // (2) the index of the element in the array
+        albums                               // (3) the entire array
+      ) => 
+      {                                      // The method returns only the albums ...
+        return album.year < 2000;            // ... that were released before 2000.
       }
     );
-    console.log(before2000);
+    console.log(albumsBefore2000.length);    // 1
   })();
 }
