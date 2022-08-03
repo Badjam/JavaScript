@@ -2,10 +2,10 @@ function init() {
 
   (function() {
     const allListItemElements = document.getElementsByTagName('li');
-    console.log(allListItemElements.length); // Ausgabe: 8
+    console.log(allListItemElements.length); // Output: 8
     const subList = document.getElementById('list-2');
     const subListListItems = subList.getElementsByTagName('li');
-    console.log(subListListItems.length); // Ausgabe: 4
+    console.log(subListListItems.length); // Output: 4    
   })();
 
 }

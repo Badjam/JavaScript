@@ -10,16 +10,16 @@ function init() {
 
   (function() {
     const tbody = document.querySelector('tbody');
-    console.log(tbody.firstChild);        // Textknoten
-    console.log(tbody.lastChild);         // Textknoten
+    console.log(tbody.firstChild);        // Text node
+    console.log(tbody.lastChild);         // Text node
     console.log(tbody.firstElementChild); // <tr>
     console.log(tbody.lastElementChild);  // <tr>
   })();
 
   (function() {
     const tableCell = document.querySelector('tbody tr:nth-child(2)');
-    console.log(tableCell.previousSibling);        // Textknoten
-    console.log(tableCell.nextSibling);            // Textknoten
+    console.log(tableCell.previousSibling);        // Text node
+    console.log(tableCell.nextSibling);            // Text node
     console.log(tableCell.previousElementSibling); // <tr>
     console.log(tableCell.nextElementSibling);     // <tr>
   })();

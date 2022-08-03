@@ -1,27 +1,35 @@
 function init() {
-  // Selektion nach ID
-  const mainElement = document.getElementById('main');
-  mainElement.className = 'border';
+  const mainElement = document.getElementById('main'); // Select element by ID.
+  if(mainElement !== null) {                           // If the element is not 
+                                                       // empty,
+    mainElement.className = 'border';                  // assign new CSS class.
+  }
+  
 
-  // // Selektion nach Klassennamen
-  // const tableRowsEven = document
-  //   .getElementsByClassName('even');              // Selektiere alle geraden Tabellenzeilen
-  // if(tableRowsEven.length > 0) {                  // Wenn mindestens ein Element gefunden wurde
-  //   for(let i=0; i<tableRowsEven.length; i++) {   // Gehe alle Elemente durch
-  //     const tableRow = tableRowsEven[i];            // Weise Element einer Variablen zu
-  //     tableRow.style.backgroundColor = '#CCCCCC'; // Setze neue Hintergrundfarbe
-  //   }
-  // }
+//   const tableRowsEven = document
+//   .getElementsByClassName('even');              // Select all even 
+//                                                 // table rows.
+// if(tableRowsEven.length > 0) {                  // If at least one element 
+//                                                 // is found.
+//   for(let i=0; i<tableRowsEven.length; i++) {   // Iterate all elements.
+//     const tableRow = tableRowsEven[i];          // Assign element to a variable.
+//     tableRow.style.backgroundColor = '#CCCCCC'; // Set new background color.
+//   }
+// }
+
+
 
   /*
-  const tableRowsEven = document
-    .getElementsByClassName('even');              // Selektiere alle geraden Tabellenzeilen
-  if(tableRowsEven.length > 0) {                  // Wenn mindestens ein Element gefunden wurde
-    for(let i=0; i<tableRowsEven.length; i++) {   // Gehe alle Elemente durch
-      const tableRow = tableRowsEven.item(i);       // Weise Element einer Variablen zu
-      tableRow.style.backgroundColor = '#CCCCCC'; // Setze neue Hintergrundfarbe
-    }
+  .getElementsByClassName('even');              // Select all even 
+                                                // table rows.
+if(tableRowsEven.length > 0) {                  // If at least one element 
+                                                // is found.
+  for(let i=0; i<tableRowsEven.length; i++) {   // Iterate all elements.
+    const tableRow = tableRowsEven.item(i);     // Assign element to a variable.
+    tableRow.style.backgroundColor = '#CCCCCC'; // Set new background color.
   }
+}
+
   */
 
   /*
@@ -31,14 +39,15 @@ function init() {
   */
 
   // (function() {
-  //   const tableCells = document.getElementsByTagName('td');
-  //   if(tableCells.length > 0) {                  // Wenn mindestens ein Element gefunden wurde
-  //     for(let i=0; i<tableCells.length; i++) {   // Gehe alle Elemente durch
-  //       const tableCell = tableCells[i];           // Weise Element einer Variablen zu
-  //       tableCell.style.fontFamily = 'Verdana';  // Setze neue Schriftart
-  //       tableCell.style.fontSize = '9pt';        // Setze neue Schriftgröße
-  //     }
-  //   }
+    // const tableCells = document.getElementsByTagName('td');
+    // if(tableCells.length > 0) {                  // If at lease one element is 
+    //                                              // found.
+    //   for(let i=0; i<tableCells.length; i++) {   // Iterate all elements.
+    //     const tableCell = tableCells[i];         // Assign element to a variable.
+    //     tableCell.style.fontFamily = 'Verdana';  // Set new font.
+    //     tableCell.style.fontSize = '9pt';        // Set new font size.
+    //   }
+    // }    
   // })();
 }
 

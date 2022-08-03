@@ -13,9 +13,9 @@ function init() {
     const newCellFirstName  = newRow.insertCell(0);
     newCellFirstName.textContent = 'Bob';
     const newCellLastName  = newRow.insertCell(1);
-    newCellLastName.textContent = 'Mustermann';
+    newCellLastName.textContent = 'Doe';
     const newCellEmail  = newRow.insertCell(2);
-    newCellEmail.textContent = 'bob.mustermann@javascripthandbuch.de';
+    newCellEmail.textContent = 'bob.doe@javascripthandbuch.de';    
 
   })();
 }

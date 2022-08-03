@@ -2,7 +2,7 @@ function init() {
 
   (function() {
     const element = document.querySelector('#news li:nth-child(1)');
-    element.textContent = 'Platten-News: Neues Album von Tool endlich erschienen.';
+    element.textContent = 'Record news: New album by Tool not yet released.';    
   })();
 
 }

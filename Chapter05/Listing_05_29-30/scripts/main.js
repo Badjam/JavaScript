@@ -1,33 +1,33 @@
 const contacts = [
   {
-    firstName: 'Max ',
-    lastName: 'Mustermann',
-    email: 'max.mustermann@javascripthandbuch.de'
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john.doe@javascripthandbuch.de'
   },
   {
-    firstName: 'Moritz',
-    lastName: 'Mustermann',
-    email: 'moritz.mustermann@javascripthandbuch.de'
+    firstName: 'James',
+    lastName: 'Doe',
+    email: 'james.doe@javascripthandbuch.de'
   },
   {
-    firstName: 'Peter ',
-    lastName: 'Mustermann',
-    email: 'peter.mustermann@javascripthandbuch.de'
+    firstName: 'Peter',
+    lastName: 'Doe',
+    email: 'peter.doe@javascripthandbuch.de'
   }
 ];
 
 function createTable() {
   const tableBody = document.querySelector('#contact-table tbody');
   for(let i=0; i<contacts.length; i++) {
-    // Für den aktuellen Kontakt ...
+    // For the current contact ...
     const contact = contacts[i];
-    // ... wird eine neue Zeile erzeugt.
+    // ... a new line is created.
     // (1)
     const tableRow = document.createElement('tr');
-    // Innerhalb der Zeile werden verschiedene Zellen erstellt ...
+    // Within the row, different cells are created ... 
     // (2)
     const tableCellFirstName = document.createElement('td');
-    // ... und jeweils mit Werten befüllt.
+    // ... and filled with values.
     // (3)
     const firstName = document.createTextNode(contact.firstName);
     // (4)
