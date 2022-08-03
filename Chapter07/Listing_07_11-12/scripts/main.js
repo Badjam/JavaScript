@@ -1,19 +1,17 @@
 function init() {
   const messageContainer = document
-    .getElementById('selection');                   // Container für Meldungen
-  const order = document.getElementById('order');     // <select>-Element
-  // const order = document.forms.orderform.order;    // Alternative
-  order.addEventListener('change', updateOrder);    // Listener registrieren
+    .getElementById('selection');                   // Container for messages
+  const order = document.getElementById('order');   // <select> element
+  order.addEventListener('change', updateOrder);    // Register listener
 
-  function updateOrder(event) {                     // this ist vom ...
-                                                    // ... Typ HTMLSelectElement
-    const value = this.value;                         // Der aktuell selektierte Wert
-    const index = this.selectedIndex;                 // Index der ausgewählten Option
-    const option = this.item(index);                  // Ausgewähltes <option>-Element
-    const text = this.item(index).text;               // Text des <option>-Elements
-    // value = this.item(index).value               // Enthält auch den Wert
-    const message = text + ' (' + value + ')';        // Nachricht erzeugen
-    messageContainer.innerText = message;           // Nachricht anzeigen
+  function updateOrder(event) {                     // this is of the ...
+                                                    // ... HTMLSelectElement type
+    const value = this.value;                       // The currently selected value
+    const index = this.selectedIndex;               // Index of the selected option
+    const option = this.item(index);                // Selected <option> element
+    const text = this.item(index).text;             // Text of the <option> element 
+    const message = text + ' (' + value + ')';      // Generate message
+    messageContainer.innerText = message;           // Display message
   }
 }
 

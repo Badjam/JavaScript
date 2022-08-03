@@ -1,35 +1,35 @@
 function init() {
   const registerForm = document.getElementById('register');
-  registerForm.noValidate = true;       // Native Validierung aus
+  registerForm.noValidate = true; 
   registerForm.addEventListener('submit', validateForm);
 }
 
 document.addEventListener('DOMContentLoaded', init);
 
 function validateForm(e) {
-  const event = (e ? e : window.event);   // Event
-  const form = (event.target              // Zielelement
-    ? event.target
-    : event.srcElement);
-  let formIsValid = true;               // Gültigkeit des Formulars
-  const formElements =                  // Formularelemente, die ...
-    form.querySelectorAll(              // ... native Validierung ...
-      'input, textarea, select');       // ... unterstützen.
+  const event = (e ? e : window.event); // Event
+  const form = (event.target            // Target element
+            ? event.target
+            : event.srcElement);
+  let formIsValid = true;               // Validity of the form
+  const formElements =                  // Form elements ...
+    form.querySelectorAll(              // ... that support ...
+      'input, textarea, select');       // ... native validation
   for (let i = 0; i < formElements.length; i++) {
     const formElement = formElements[i];
     if (formElement.willValidate !== 'undefined') {
       formElement.checkValidity();
     } else {
-      // Browser unterstützt nicht
-      // native HTML5-Validierung
+                                        // Browser does not support
+                                        // native HTML5 validation.
     }
-    if (!formElement.validity.valid) {  // Falls Wert nicht gültig ...
-      formIsValid = false;              // ... Formulardaten nicht valide.
+    if (!formElement.validity.valid) {  // If the value is not valid ...
+      formIsValid = false;              // ... the form data is not valid.
     }
   }
-  if (!formIsValid) {                   // Falls Formulardaten nicht valide ...
+  if (!formIsValid) {                   // If the form data is not valid ...
     if (event.preventDefault) {         // ...
-      event.preventDefault();           // ... Standardaktionen verhindern.
+      event.preventDefault();           // ... prevent default actions.
     }
   }
   return formIsValid;

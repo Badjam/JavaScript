@@ -2,7 +2,7 @@ function init() {
   const checkbox = document.getElementById('remember');
   checkbox.addEventListener('change', (e) => {
     console.log(checkbox.value);    // "on"
-    console.log(checkbox.checked);  // true oder false
+    console.log(checkbox.checked);  // true or false
     console.log(this.value);        // undefined
     console.log(this.checked);      // undefined
   });

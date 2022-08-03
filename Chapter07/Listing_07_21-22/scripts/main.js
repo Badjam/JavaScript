@@ -4,15 +4,15 @@ function init() {
 }
 
 function validateEmail(e) {
-  const event = (e ? e : window.event);               // Event
-  const emailElement = (event.target                  // Zielelement
+  const event = (e ? e : window.event);             // Event
+  const emailElement = (event.target                // Target element
     ? event.target
     : event.srcElement);
   console.log(emailElement.willValidate);           // true
   console.log(emailElement.validity);               // ValidityState: ...
-  console.log(emailElement.validity.valueMissing);  // ... Wert vorhanden?
-  console.log(emailElement.validity.valid);         // ... Wert gültig?
-  console.log(emailElement.validationMessage);      // Validierungsmeldung
+  console.log(emailElement.validity.valueMissing);  // ... Value present?
+  console.log(emailElement.validity.valid);         // ... Value valid?
+  console.log(emailElement.validationMessage);      // Validation message
 
   const errorContainer = document.getElementById('email-error');
   const messageContainer = errorContainer.querySelector('.error-message');
@@ -23,6 +23,7 @@ function validateEmail(e) {
     messageContainer.textContent = '';
     errorContainer.style.display = 'none';
   }
+
 }
 
 document.addEventListener('DOMContentLoaded', init);
