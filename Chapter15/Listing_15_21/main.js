@@ -1,21 +1,19 @@
 'use strict';
 const loadModule = true;
-
+ 
 if (loadModule) {
   const moduleSpecifier = './logger.js';
   import(moduleSpecifier)
     .then(module => {
-      // Aufruf der Funktion info des Moduls 'logger'
-      module.info('Modul dynamisch geladen!');
-      // Aufruf der Funktion debug des Moduls 'logger'
-      module.debug('Modul dynamisch geladen!');
-      // Aufruf der Funktion warn des Moduls 'logger'
-      module.warn('Modul dynamisch geladen!');
-      // Aufruf der Funktion error des Moduls 'logger'
-      module.error('Modul dynamisch geladen!');
-    })
-    .catch(error => {
-        console.error('Fehler beim Laden des Moduls')
+      // Calling the info function of the 'logger' module
+      module.info('Module loaded dynamically!');
+      // Calling the debug function of the 'logger' module
+      module.debug('Module loaded dynamically!');
+      // Calling the warn function of the 'logger' module
+      module.warn('Module loaded dynamically!');
+      // Calling the error function of the 'logger' module
+      module.error('Module loaded dynamically!');
+    }).catch(error => {
+        console.error('Error loading the module')
     });
 }
-

@@ -1,11 +1,11 @@
 'use strict';
-// Definition von 'ModuleA'
+// Definition of 'ModuleA
 define(
-  'ModuleA', // Name des Moduls
-  ['ModuleB'], // zu importierende Module
-  function (moduleB) { // Funktion, die das Modul definiert
+  'ModuleA',           // Name of the module
+  ['ModuleB'],         // Modules to be imported
+  function (moduleB) { // Function that defines the module
     const x = 5;
-    let y = 4711;
+    const y = 4711;
     const module = {
       getX: function() {
         return x;
@@ -16,9 +16,9 @@ define(
       print: function() {
         moduleB.printHelloWorld();
         console.log(
-          'x: ' +
-          this.getX() +
-          ', y: ' +
+          'x: ' + 
+          this.getX() + 
+          ', y: ' + 
           this.getY()
         )
       }
@@ -26,11 +26,11 @@ define(
     return module;
   }
 );
-// Definition von 'ModuleB'
+// Definition of 'ModuleB'
 define(
-  'ModuleB', // Name des Moduls
-  [], // zu importierende Module
-  function () { // Funktion, die das Modul definiert
+  'ModuleB', // Name of the module
+  [],                  // Modules to be imported
+  function () {        // Function that defines the module
     const module = {
       printHelloWorld: function() {
         console.log('Hello World');

@@ -1,9 +1,9 @@
 'use strict';
-// Datei "ModuleA.js"
-// Laden eines Moduls
+// File "ModuleA.js"
+// Loading a module
 const moduleB = require('ModuleB');
 const x = 5;
-let y = 4711;
+const y = 4711;
 function getX() {
   return x;
 }
@@ -13,12 +13,11 @@ function getY() {
 function print() {
   moduleB.printHelloWorld();
   console.log(
-    'x: ' +
-    getX() +
-    ', y: ' +
+    'x: ' + 
+    getX() + 
+    ', y: ' + 
     getY()
   );
 }
-// Öffentliches API
-exports.print = print;
-
+// public API
+exports.print = print; 

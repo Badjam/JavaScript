@@ -1,5 +1,5 @@
 {
-  "name": "listing_15_21",
+  "name": "listing_15_19",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
@@ -8,6 +8,5 @@
   "type": "module",
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "description": ""
 }

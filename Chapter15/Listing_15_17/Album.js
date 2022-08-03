@@ -1,9 +1,9 @@
 'use strict';
-// Datei: Album.js
+// File: Album.js
 export default class Album {
-  constructor(interpret, titel, jahr) {
+  constructor(artist, title, year) {
     this.interpret = interpret;
     this.titel = titel;
-    this.jahr = jahr;
+    this.year = year;
   }
-}
+} 

@@ -1,18 +1,19 @@
 'use strict';
-var ModuleB = ModuleB || (function () {
+var ModuleB = ModuleB || (function () { 
   function printHelloWorld() {
     console.log('Hello World');
   }
   return {
     printHelloWorld: printHelloWorld
-  }
+  } 
 })();
-var ModuleA = ModuleA || (function (moduleB) {
-// Innerhalb des Moduls stehen ...
-// ... Abhängigkeiten über das entsprechende ...
-// ... Argument zur Verfügung.
+
+var ModuleA = ModuleA || (function (moduleB) { 
+  // Within the module, dependencies ...
+  // ... are available via the ...
+  // ... corresponding argument.
   const x = 5;
-  let y = 4711;
+  const y = 4711;
   function getX() {
     return x;
   }
@@ -22,9 +23,9 @@ var ModuleA = ModuleA || (function (moduleB) {
   function print() {
     moduleB.printHelloWorld();
     console.log(
-      'x: ' +
-      getX() +
-      ', y: ' +
+      'x: ' + 
+      getX() + 
+      ', y: ' + 
       getY()
     )
   }
@@ -32,7 +33,7 @@ var ModuleA = ModuleA || (function (moduleB) {
     getX: getX,
     getY: getY,
     print: print
-  }
-// Abhängigkeit wird als Argument übergeben.
+  } 
+  // Dependency is passed as an argument.
 })(ModuleB);
 ModuleA.print();

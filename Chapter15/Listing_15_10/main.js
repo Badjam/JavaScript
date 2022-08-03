@@ -1,7 +1,7 @@
 'use strict';
-var Module = Module || (function () {
+var Module = Module || (function () { 
   const x = 5;
-  let y = 4711;
+  const y = 4711;
   function getX() {
     return x;
   }
@@ -10,17 +10,17 @@ var Module = Module || (function () {
   }
   function print() {
     console.log(
-      'x: ' +
-      getX() +
-      ', y: ' +
+      'x: ' + 
+      getX() + 
+      ', y: ' + 
       getY()
     )
   }
-  // Rückgabeobjekt enthält nur Verweise.
+  // Return object contains only references.
   return {
     getX: getX,
     getY: getY,
     print: print
-  }
+  } 
 })();
 Module.print();

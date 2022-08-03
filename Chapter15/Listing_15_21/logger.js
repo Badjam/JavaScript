@@ -1,5 +1,5 @@
 'use strict';
-// Datei: logger.js
+// File: logger.js
 export function info(message) {
   console.log(message);
 }

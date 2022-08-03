@@ -1,5 +1,5 @@
 'use strict';
-// Datei "main.js"
-// Laden eines Moduls
+// File "main.js"
+// Loading a module
 const moduleA = require('ModuleA');
 moduleA.print();

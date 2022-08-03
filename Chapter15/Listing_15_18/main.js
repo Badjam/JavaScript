@@ -1,12 +1,12 @@
 'use strict';
 import {
-  info,
-  debug,
-  warn,
-  error
-  } from './logger.js'
+  info, 
+  debug, 
+  warn, 
+  Error
+} from './logger.js'
 
-info(4711); // Aufruf der Funktion 'info' des Moduls 'logger'
-debug(4711); // Aufruf der Funktion 'debug' des Moduls 'logger'
-warn(4711); // Aufruf der Funktion 'warn' des Moduls 'logger'
-error(4711); // Aufruf der Funktion 'error' des Moduls 'logger'
+info(4711);   // Call the 'info' function of the 'logger' module 
+debug(4711);  // Call the 'debug' function of the 'logger' module
+warn(4711);   // Call the 'warn' function of the 'logger' module 
+error(4711);  // Call the 'error' function of the 'logger' module

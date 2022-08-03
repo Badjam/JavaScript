@@ -1,9 +1,9 @@
 'use strict';
-import { // Import ...
-  info as i, // ... der Funktion 'info' unter Alias 'i'
-  debug as d, // ... der Funktion 'debug' unter Alias 'd'
-  warn as w, // ... der Funktion 'warn' unter Alias 'w'
-  error as e // ... der Funktion 'error' unter Alias 'e'
-  } from './logger.js'
+import {               // Import ...
+  info as i,           // ... of the 'info' function under alias 'i'
+  debug as d,          // ... of the 'debug' function under alias 'd'
+  warn as w,           // ... of the 'warn' function under alias 'w'
+  error as e           // ... of the 'error' function under alias 'e'
+} from './logger.js'
 
-e(4711); // Aufruf der Funktion error des Moduls 'logger'
+e(4711); // Call the error function of the 'logger' module

@@ -1,7 +1,8 @@
 'use strict';
-// Datei "ModuleB.js"
+// File "ModuleB.js"
 function printHelloWorld() {
   console.log('Hello World');
 }
-// öffentliche API
-exports.printHelloWorld = printHelloWorld;
+// public API
+exports.printHelloWorld = printHelloWorld; 
+

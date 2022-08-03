@@ -1,7 +1,7 @@
 'use strict';
-var Module = Module || (function () {
+var Module = Module || (function () { 
   const x = 5;
-  let y = 4711;
+  const y = 4711;
   return {
     getX: function() {
       return x;
@@ -9,14 +9,14 @@ var Module = Module || (function () {
     getY: function() {
       return y;
     },
-// Zugriff auf eigene Methoden
+    // Access to own methods
     print: function() {
       console.log(
-        'x: ' +
-        Module.getX() +
-        ', y: ' +
+        'x: ' + 
+        Module.getX() + 
+        ', y: ' + 
         Module.getY()
       )
     }
-  }
+  } 
 })();
