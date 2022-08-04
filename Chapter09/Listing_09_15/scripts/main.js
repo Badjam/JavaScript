@@ -4,7 +4,7 @@ function init() {
   request.onload = (e) => {
     if(request.status === 200) {
       const xml = request.responseXML;
-      // hier Weiterverarbeitung der XML-Daten
+      // here further processing of the XML data
       console.log(xml);
     }
   };

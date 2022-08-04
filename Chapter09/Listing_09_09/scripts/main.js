@@ -2,26 +2,26 @@
 function init() {
   const request = new XMLHttpRequest();
   request.addEventListener('loadstart', (event) => {
-      console.log('Anfrage gestartet');
+    console.log('Request started');
   });
   request.addEventListener('progress', (event) => {
-    console.log('Fortschritt');
+    console.log('Progress');
   });
   request.addEventListener('abort', (event) => {
-    console.log('Anfrage abgebrochen');
+    console.log('Request aborted');
   });
   request.addEventListener('error', (event) => {
-    console.log('Fehler bei der Anfrage');
+    console.log('Error during request');
   });
   request.addEventListener('load', (event) => {
-    console.log('Antwort geladen');
+    console.log('Response loaded');
   });
   request.addEventListener('timeout', (event) => {
-    console.log('Anfrage wegen Time-Out abgebrochen');
+    console.log('Request aborted due to timeout');
   });
   request.addEventListener('loadend', (event) => {
-    console.log('Anfrage beendet');
-  });
+    console.log('Request finished');
+  });  
   request.open(
     'GET',
     'content/data.xml'

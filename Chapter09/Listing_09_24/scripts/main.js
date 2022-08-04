@@ -2,8 +2,8 @@
 async function init() {
   try {
     const body = {
-      firstName: 'Max',
-      lastName: 'Mustermann',
+      firstName: 'John',
+      lastName: 'Doe',
     }
     const response = await fetch('register',
       {
@@ -20,5 +20,5 @@ async function init() {
     console.error(error);
   };
 }
-
+ 
 document.addEventListener('DOMContentLoaded', init);

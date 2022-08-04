@@ -9,7 +9,7 @@ function init() {
       } else {
         json = JSON.parse(request.responseText);
       }
-      // hier Weiterverarbeitung der JSON-Daten
+      // here further processing of the JSON data
       console.log(json);
     }
   };

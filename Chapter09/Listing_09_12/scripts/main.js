@@ -1,18 +1,20 @@
 'use strict';
 function init() {
-  const request = new XMLHttpRequest();                 // Erstellen des XMLHttpRequest-Objekts
-  request.onload = () => {                            // Wenn Ergebnis geladen wurde ...
-    if(request.status === 200) {
-      const html = request.responseXML.body.innerHTML;  // HTML-Antwort als geparstes Objekt.
+  const request = new XMLHttpRequest();                // Create the XMLHttpRequest
+  // object
+  request.onload = () => {                             // Wenn result is loaded ...
+    if (request.status === 200) {
+      const html = request.responseXML.body.innerHTML; // HTML response as parsed 
+      // object.
     }
   };
   request.open(
-    'GET',                                            // Laden der ...
-    'content/snippet.html'                            // ... HTML-Datei
+    'GET',                                         // Load the ...
+    'content/snippet.html'                         // ... HTML file
   );
-  request.responseType = 'document';                  // Antwort als geparstes Objekt ...
-  request.setRequestHeader('Accept', 'text/html');    // ... nur vom Typ HTML
-  request.send();                                     // Absenden der Anfrage
+  request.responseType = 'document';               // Response as parsed object ...
+  request.setRequestHeader('Accept', 'text/html'); // ... only of type HTML
+  request.send();                                  // Send request
 }
 
 document.addEventListener('DOMContentLoaded', init);

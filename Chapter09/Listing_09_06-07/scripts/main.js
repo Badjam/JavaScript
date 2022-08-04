@@ -47,18 +47,21 @@ function init() {
     ]
   }
   const string = JSON.stringify(
-    object,               // JavaScript-Objekt
-    null,                 // Ersetzungsfunktion
-    2                     // Einrückung
+    object,               // JavaScript object
+    null,                 // Replacement function
+    2                     // Indentation
   );
   const objectParsed = JSON.parse(
-    string,               // JSON
-    null                  // Ersetzungsfunktion
+    string,                                   // JSON
+    (key, value) => {                         // Replacement function
+      return value;                           // Return value determines target value
+    }
   );
   console.log(objectParsed.artists);          // [Object, Object]
   console.log(objectParsed.artists.length);   // 2
   console.log(objectParsed.artists[0].name);  // "Kyuss"
   console.log(objectParsed.artists[1].name);  // "Ben Harper"
+  
 }
 
 document.addEventListener('DOMContentLoaded', init);

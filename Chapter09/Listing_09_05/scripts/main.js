@@ -51,9 +51,9 @@ function init() {
   console.log(object.artists[0].name);  // "Kyuss"
   console.log(object.artists[1].name);  // "Ben Harper"
   const string = JSON.stringify(
-      object,               // JavaScript-Objekt
-      null,                 // Ersetzungsfunktion
-      2                     // Einrückung
+      object,               // JavaScript object
+      null,                 // Replacement function
+      2                     // Indentation
     );
   console.log(string);
 }

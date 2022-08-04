@@ -16,7 +16,7 @@ function init() {
   const request = new XMLHttpRequest();
   request.onload = () => {
     if(request.status === 200) {
-      console.log('Daten erfolgreich versendet.');
+      console.log('Data successfully sent.');
     }
   };
   request.open('POST', 'artists/create');

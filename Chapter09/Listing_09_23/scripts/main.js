@@ -1,10 +1,9 @@
 'use strict';
 async function init() {
   try {
-    // 1.) Abfrage der Datei artists.json
+    // 1.) Query the artists.json file
     const response = await fetch('artists.json');
-
-    // Folgende Eigenschaften enthält das response-Objekt:
+    // The response object contains the following properties:
     console.log(response.status);     // 200
     console.log(response.statusText); // "OK"
     console.log(response.type);       // "basic"
@@ -13,12 +12,10 @@ async function init() {
     console.log(response.ok);         // true
     console.log(response.redirected); // false
     console.log(response.url);        // "http://localhost:8080/artists.json"
-                                      // (abhängig vom Wurzelverzeichnis des Webservers)
-
-    
-    // 2.) Umwandeln der Antwort in ein JavaScript-Objekt
+                                   // (depending on the root directory of the web server)
+    // 2.) Convert the response into a JavaScript object
     const result = await response.json(); 
-    // 3.) Auswerten des umgewandelten JavaScript-Objekts
+    // 3.) Evaluate the converted JavaScript object
     const table = initTable();
     const artists = result.artists;
     for (let i = 0; i < artists.length; i++) {
