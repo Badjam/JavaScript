@@ -1,7 +1,7 @@
 {
-  "name": "beispielpaket",
+  "name": "samplepackage",
   "version": "1.0.0",
-  "description": "Beispielpaket JavaScript-Handbuch",
+  "description": "Sample package JavaScript Manual",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -10,11 +10,10 @@
     "javascript"
   ],
   "author": "Philip Ackermann",
-  "license": "MIT",
   "dependencies": {
-    "underscore": "~1.8.3",
+    "lodash": "~4.17.21"
   },
   "devDependencies": {
-    "mocha": "~2.5.3"
+    "mocha": "~8.4.0"
   }
 }

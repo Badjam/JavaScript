@@ -1,11 +1,12 @@
 'use strict';
-const mongoDB = require('mongodb'); // mongodb-Package einbinden
-const client = require('mongodb').MongoClient; // Client erstellen
-const url = 'mongodb://localhost:27017/exampleDB'; // URL zur Datenbank
-client.connect(url, (error, db) => { // Verbindung herstellen
-  if (!error) { // Falls es keinen Fehler gibt ...
-    console.log('Verbindung hergestellt'); // ... wurde die Verbindung ...
-	// ... erfolgreich hergestellt.
-  	db.close(); // Verbindung schließen
-  }
+const mongoDB = require('mongodb');                 // Include mongodb package
+const client = mongoDB.MongoClient;                 // Create client
+const url = 'mongodb://localhost:27017/exampleDB';  // URL to the database
+client.connect(url, (error, db) => {                // Establish connection
+  if (!error) {                                     // If there is no ...
+                                                    // ... error, ...
+    console.log('Connection established');          // ... the connection ...
+                                                    // ... was established successfully.
+    db.close();                                     // Close connection
+  }                                               
 });

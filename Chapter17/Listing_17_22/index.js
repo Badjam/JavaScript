@@ -1,9 +1,9 @@
 'use strict';
 const http = require('http');
 const options = {
-  host: 'localhost',
-  port: '8080',
-  path: '/index.html'
+   host: 'localhost',
+   port: '8080',
+   path: '/index.html'  
 };
 function handleResponse(response){
   let body = '';

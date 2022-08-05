@@ -3,9 +3,9 @@ const http = require('http');
 const PORT = 8080;
 function handleRequest(request, response){
   response.writeHead(200, {'Content-Type': 'text/plain'});
-  response.end('Hallo Welt');
+  response.end('Hello World');
 }
 const server = http.createServer(handleRequest);
 server.listen(PORT, () => {
-  console.log("Server läuft unter: http://localhost:%s", PORT);
+  console.log("Server is running at: http://localhost:%s", PORT);
 });

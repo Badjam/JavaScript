@@ -1,11 +1,12 @@
 'use strict';
-const events = require('events'); // events-Package einbinden
-const emitter = new events.EventEmitter(); // Emitter erstellen
-emitter.once( // Event abfangen
-  'personAdded', // Event-Name
-  (firstName, lastName) => { // Callback-Funktion
-    console.log(`${firstName} ${lastName}`);
+const events = require('events');                     // Include events package
+const emitter = new events.EventEmitter();            // Create emitter
+emitter.once(                                         // Intercept event
+  'personAdded',                                      // Event name
+  (firstName, lastName) => {                          // Callback function
+    console.log(firstName + ' ' + lastName);
   }
 );
-emitter.emit('personAdded', 'Max', 'Mustermann'); // Ausgabe: "John Doe"
-emitter.emit('personAdded', 'Moritz', 'Mustermann'); // Event-Listener wird nicht ausgelöst
+emitter.emit('personAdded', 'John', 'Doe');           // Output: "John Doe"
+emitter.emit('personAdded', 'James', 'Doe');          // Event listener is not...
+                                                      // ... triggered.

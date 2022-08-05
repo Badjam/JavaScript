@@ -5,6 +5,6 @@ const app = express();
 app.use(cookieParser());
 app.get('/', (request, response) => {
   const cookies = request.cookies;
-// hier normale Bearbeitung der Anfrage
+  // here normal processing of the request
 });
 app.listen(8080);

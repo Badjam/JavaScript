@@ -2,16 +2,22 @@
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
+ 
 const INPUT = path.join(__dirname, '..', 'data', 'someFile.txt.gz');
 const OUTPUT = path.join(__dirname, '..', 'data', 'output');
 const OUTPUT_FILE = path.join(OUTPUT, 'someFile.txt');
+ 
 fs.emptyDirSync(OUTPUT);
-// 1. Stream zum Einlesen der zu dekomprimierenden Datei
+ 
+// 1. Stream for reading the file to be decompressed
 const inputStream = fs.createReadStream(INPUT);
-// 2. Stream für das Dekomprimieren der eingelesenen Daten
+ 
+// 2. Stream for decompressing the read data
 const gunzipStream = zlib.createGunzip();
-// 3. Stream für das Schreiben der Archivdatei
+ 
+// 3. Stream for writing the archive file
 const outputStream = fs.createWriteStream(OUTPUT_FILE);
-inputStream // Einlesen der Datei
-  .pipe(gunzipStream) // Dekomprimieren der eingelesenen Daten
-  .pipe(outputStream); // Schreiben der Archivdatei
+ 
+inputStream             // Read the file
+  .pipe(gunzipStream)   // Decompress the read data
+  .pipe(outputStream);  // Write the archive file

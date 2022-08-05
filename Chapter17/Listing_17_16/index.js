@@ -4,5 +4,5 @@ fs.mkdir('test', (error) => {
   if (error) {
     return console.error(error);
   }
-  console.log('Verzeichnis erstellt');
+  console.log('Directory created');
 });
