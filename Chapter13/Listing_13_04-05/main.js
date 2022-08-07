@@ -1,10 +1,10 @@
 'use strict';
 const animal = {
   name: '',
-  color: 'Braun',
+  color: 'Brown',
   age: 0,
   eat: function(food) {
-    console.log('Mmpf mmpf, ' + food + '!');
+    console.log('Chow chow, ' + food + '!');
   },
   drink: function(drink) {
     console.log('Mmmmmmh, ' + drink + '!');
@@ -12,21 +12,21 @@ const animal = {
 }
 const cat = Object.create(animal);
 cat.meow = function() {
-  console.log('Miauuuuuu!');
+  console.log('Meowwwww!');
 }
 const dog = Object.create(animal);
 dog.bark = function() {
-  console.log('Wuff wuff!');
+  console.log('Woof woof!');
 }
 const vegetarianDog = Object.create(dog);
 vegetarianDog.eat = function(food) {
-  if(food.indexOf('Fleisch') >= 0 || food.indexOf('fleisch') >= 0) {
-    throw new Error('Ich esse doch kein Fleisch!');
+  if(food.indexOf('meat') >= 0 || food.indexOf('meat') >= 0) {
+    throw new Error('I don't eat meat!');
   } else {
-    console.log('Mmpf mmpf, ' + food + '!');
+    console.log('Chow chow, ' + food + '!');
   }
-}
-vegetarianDog.eat('Käse'); // vorhanden in vegetarionDog
-vegetarianDog.bark(); // vorhanden in dog
-vegetarianDog.drink('Wasser'); // vorhanden in animal
-vegetarianDog.toString(); // vorhanden in Object
+} 
+vegetarianDog.eat('cheese');    // Present in vegetarionDog
+vegetarianDog.bark();           // Present in dog
+vegetarianDog.drink('water');   // Present in animal
+vegetarianDog.toString();       // Present in Object

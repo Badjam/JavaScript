@@ -1,10 +1,10 @@
 'use strict';
 const animal = {
   name: '',
-  color: 'Braun',
+  color: 'Brown',
   age: 0,
   eat: function(food) {
-    console.log('Mmpf mmpf, ' + food + '!');
+    console.log('Chow chow, ' + food + '!');
   },
   drink: function(drink) {
     console.log('Mmmmmmh, ' + drink + '!');

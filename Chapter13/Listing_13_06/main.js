@@ -1,10 +1,10 @@
 'use strict';
 const animal = {
   name: '',
-  color: 'Braun',
+  color: 'Brown',
   age: 0,
   eat: function(food) {
-    console.log('Mmpf mmpf, ' + food + '!');
+    console.log('Chow chow, ' + food + '!');
   },
   drink: function(drink) {
     console.log('Mmmmmmh, ' + drink + '!');
@@ -12,18 +12,18 @@ const animal = {
 }
 const cat = Object.create(animal);
 cat.meow = function() {
-  console.log('Miauuuuuu!');
+  console.log('Meowwwww!');
 }
 const dog = Object.create(animal);
 dog.bark = function() {
-  console.log('Wuff wuff!');
+  console.log('Woof woof!');
 }
 const vegetarianDog = Object.create(dog);
 vegetarianDog.eat = function(food) {
-  if(food.indexOf('Fleisch') >= 0 || food.indexOf('fleisch') >= 0) {
-    throw new Error('Ich esse doch kein Fleisch!');
+  if(food.indexOf('meat') >= 0 || food.indexOf('meat') >= 0) {
+    throw new Error('I don`t eat meat!');
   } else {
     this.__proto__.eat.call(this, food);
   }
 }
-vegetarianDog.eat('Käse');
+vegetarianDog.eat('cheese');

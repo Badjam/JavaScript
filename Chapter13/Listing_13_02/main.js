@@ -1,20 +1,20 @@
 'use strict';
 const animal = {
   name: '',
-  color: 'Braun',
+  color: 'Brown',
   age: 0,
   eat: function(food) {
-    console.log('Mmpf mmpf, ' + food + '!');
+    console.log('Chow chow, ' + food + '!');
   },
   drink: function(drink) {
     console.log('Mmmmmmh, ' + drink + '!');
   }
 }
-const cat = Object.create(animal); // Objekte erben ...
-cat.eat('Katzenfutter'); // ... Methoden ...
-cat.drink('Milch');
-console.log(cat.color); // ... und Eigenschaften vom Prototyp.
+const cat = Object.create(animal);  // Objects inherit ...
+cat.eat('cat food');                // ... methods ...
+cat.drink('milk');
+console.log(cat.color);             // ... and properties from the prototype.
 const dog = Object.create(animal);
-dog.eat('Fleisch'); // Ausgabe: 'Mmpf mmpf, Fleisch!'
-dog.drink('Wasser'); // Ausgabe: 'Mmmmmmh, Wasser!'
-console.log(dog.color); // Ausgabe: 'Braun'
+dog.eat('meat');                    // Output: 'Chow, chow, meat!' 
+dog.drink('water');                 // Output: 'Mmmmmmh, water!'
+console.log(dog.color);             // Output: 'Brown'

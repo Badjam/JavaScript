@@ -1,7 +1,7 @@
 'use strict';
-class Animal {
+const AnimalClass = class Animal {
 
-  name = 'Max Musterfisch';
+  name = 'John Sample Fish';
   color = 'Gold';
   age = '25';
 
@@ -12,13 +12,13 @@ class Animal {
   }
 
   eat(food) {
-    console.log(`Mmpf mmpf, ${food}`);
+    console.log(`Chow chow, ${food}`);
   }
 
   drink(drink) {
     console.log(`Mmmmmmh, ${drink}`);
   }
-
+  
   toString() {
     return `${this.name}, ${this.color}, ${this.age}`;
   }
@@ -26,8 +26,8 @@ class Animal {
 }
 
 const defaultAnimal = new Animal();
-console.log(defaultAnimal.toString()); // "Max Musterfisch, Gold, 25"
-
-const fish = new Animal('Fischi', 'Grün', 2);
-fish.eat('Algen');             // "Mmpf mmpf, Algen"
-console.log(fish.toString());  // "Fischi, Grün, 2"
+console.log(defaultAnimal.toString()); // "John Sample Fish, gold, 25"
+ 
+const fish = new Animal('Fishy', 'Green', 2);
+fish.eat('Algen');                     // "Chow chow, algae"
+console.log(fish.toString());          // "Fishy, Green, 2"

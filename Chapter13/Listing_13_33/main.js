@@ -30,15 +30,7 @@ class Animal {
   set age(age) {
     this._age = age;
   }
-
-  eat(food) {
-    console.log(`Mmpf mmpf, ${food}`);
-  }
-
-  drink(drink) {
-    console.log(`Mmmmmmh, ${drink}`);
-  }
-
+  
   toString() {
     return `${this._name}, ${this._color}, ${this._age}`;
   }
@@ -46,25 +38,24 @@ class Animal {
 }
 
 Animal.ANIMAL_COLORS = { 
-  WHITE: 'Weiß',
-  BLACK: 'Schwarz',
-  BROWN: 'Braun', 
-  GREEN: 'Grün',
-  YELLOW: 'Gelb',
+  WHITE: 'White',
+  BLACK: 'Black',
+  BROWN: 'Brown', 
+  GREEN: 'Green',
+  YELLOW: 'Yellow',
   ORANGE: 'Orange'
 }
-
 console.log(Animal.ANIMAL_COLORS);
 // {
-//   WHITE: 'Weiß',
-//   BLACK: 'Schwarz',
-//   BROWN: 'Braun',
-//   GREEN: 'Grün',
-//   YELLOW: 'Gelb',
+//   WHITE: 'White',
+//   BLACK: 'Black',
+//   BROWN: 'Brown',
+//   GREEN: 'Green',
+//   YELLOW: 'Yellow',
 //   ORANGE: 'Orange'
 // }
 const bird = new Animal('Birdie', Animal.ANIMAL_COLORS.BLACK, 5);
-console.log(bird.name);   // "Birdie"
-console.log(bird.color);  // "Schwarz"
-console.log(bird.age);    // 5
+console.log(bird.name);  // "Birdie"
+console.log(bird.color); // "Black"
+console.log(bird.age);   // 5
 // console.log(bird.ANIMAL_COLORS); // undefined
