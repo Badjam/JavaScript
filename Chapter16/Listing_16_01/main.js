@@ -1,16 +1,15 @@
-'use strict';
 function asyncFunction(callbackFunction) {
-// hier weiterer Code
-  console.log('Vor Callback');
+  // More code here
+  console.log('Prior to callback');
   callbackFunction();
-  console.log('Nach Callback');
-// hier weiterer Code
+  console.log('After callback');
+  // More code here
 }
 function callbackFunction() {
-  console.log('Aufruf Callback');
+  console.log('Calling callback');
 }
 asyncFunction(callbackFunction);
-// Ausgabe:
-// "Vor Callback"
-// "Aufruf Callback"
-// "Nach Callback"
+// Output:
+// "Prior to callback"
+// "Calling callback"
+// "After callback"

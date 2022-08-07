@@ -1,42 +1,42 @@
 const person = {
-  firstName: 'Max',
-  lastName: 'Mustermann',
-  email: 'maxmustermann@javascripthandbuch.de',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'johndoe@javascripthandbuch.de',
   age: 42
 }
-
+ 
 const handler = {
   get(target, property) {
-      console.log(`Lese "${target[property]}" von Eigenschaft "${property}"`);
+      console.log(`Read "${target[property]}" from property "${property}"`);
       return target[property];
   },
-
+ 
   set(target, property, value) {
-    console.log(`Schreibe "${target[property]}" in Eigenschaft "${property}"`);
+    console.log(`Write "${target[property]}" to property "${property}"`);
     target[property] = value;
   }
 }
-
+ 
 const proxy = new Proxy(person, handler);
-proxy.firstName = 'Max';        // Aufruf set() von handler
-// Ausgabe: 
-// Schreibe Wert "Max" in Eigenschaft "firstName"
+proxy.firstName = 'John';        // Call set() of handler
+// Output: 
+// Write value "John" to property "firstName"
+ 
+proxy.lastName = 'Doe';          // Call set() of handler
+// Output:
+// Write value "Doe" to property "lastName"
+ 
+console.log(proxy.firstName);    // Call get() of handler
+// Output:
+// Read value "John" from property "firstName"
+// John
+ 
+console.log(proxy.lastName);     // call get() of handler
+// Output:
+// Read value "Doe" from property "lastName"
+// Doe
 
-proxy.lastName = 'Mustermann';  // Aufruf set() von handler
-// Ausgabe:
-// Schreibe Wert "Mustermann" in Eigenschaft "lastName"
-
-console.log(proxy.firstName);   // Aufruf get() von handler
-// Ausgabe:
-// Lese Wert "Max" von Eigenschaft "firstName"
-// Max
-
-console.log(proxy.lastName);    // Aufruf get() von handler
-// Ausgabe:
-// Lese Wert "Mustermann" von Eigenschaft "lastName"
-// Mustermann
-
-console.log(proxy.age);    // Aufruf get() von handler
-// Ausgabe:
-// Lese Wert "42" von Eigenschaft "age"
+console.log(proxy.age);          // call get() of handler
+// Output:
+// Read value "42" from property "age"
 // 42

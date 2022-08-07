@@ -14,3 +14,9 @@ for(let value of generator) {
     break;
   }
 }
+// Output:
+// A
+// 1
+// B
+// 2
+// C

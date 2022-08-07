@@ -1,22 +1,31 @@
 'use strict';
-const promise1 = new Promise((resolve, reject) => resolve('1'));
-const promise2 = new Promise((resolve, reject) => reject('2'));
-const promise3 = new Promise((resolve, reject) => resolve('3'));
-Promise
-  .any([promise1, promise2, promise3])
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(`Error: ${error}`);
+function randomNumber() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      const x = Math.floor(Math.random() * 100) + 1;
+      resolve(x);
+    }, 2000);
   });
-// Ausgabe: 1
-Promise
-  .any([promise2])
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(`Error: ${error}`);
-  });
-// Ausgabe: "Error: AggregateError: All promises were rejected"
+}
+
+async function addTwoRandomNumbers() {
+  console.log('Calculation of first random number');
+  const a = await randomNumber();
+  console.log(`Result: ${a}`);
+  console.log('Calculation of second random number');
+  const b = await randomNumber();
+  console.log(`Result: ${b}`);
+  return a + b;
+}
+
+(async () => {
+  const result = await addTwoRandomNumbers();
+  console.log(`Summe: ${result}`);
+})();
+
+// Sample output:
+// Calculation of first random number
+// Result: 38
+// Calculation of second random number
+// Result: 58
+// Total: 96

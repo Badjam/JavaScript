@@ -1,17 +1,18 @@
 'use strict';
 const artists = [
-  'Deep Purple',
-  'Jimi Hendrix',
-  'The Doors',
+  'Deep Purple', 
+  'Jimi Hendrix', 
+  'The Doors', 
   'King Crimson'
 ];
 const arrayWrapper = {
   array: artists
 }
+
 arrayWrapper[Symbol.iterator] = function() {
   const array = this.array;
-  const counter = this.array.length-1;
-// Rückgabe des Iteratorobjekts
+  let counter = this.array.length-1;
+  // Return of the iterator object
   return {
     next: function(){
       if (counter < 0) {
@@ -27,11 +28,12 @@ arrayWrapper[Symbol.iterator] = function() {
     }
   }
 };
-for(let artist of arrayWrapper) { // Iteration über den Iterator
+
+for(let artist of arrayWrapper) {  // Iteration over the iterator
   console.log(artist);
-// Ausgabe hintereinander:
-// "King Crimson"
-// "The Doors"
-// "Jimi Hendrix"
-// "Deep Purple"
+  // Output one after the other:
+  // "King Crimson"
+  // "The Doors"
+  // "Jimi Hendrix"
+  // "Deep Purple"
 }

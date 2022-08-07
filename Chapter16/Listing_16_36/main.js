@@ -1,29 +1,29 @@
 const person = {
-  firstName: 'Max',
-  lastName: 'Mustermann',
-  email: 'maxmustermann@javascripthandbuch.de',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'johndoe@javascripthandbuch.de',
   age: 42
 }
-
+ 
 const handler = {
   get(target, property) {
-      console.log(`Lese "${target[property]}" von Eigenschaft "${property}"`);
+      console.log(`Read "${target[property]}" from property "${property}"`);
       return target[property];
   },
-
+ 
   set(target, property, value) {
     if (property === 'age') {
       if (typeof value !== 'number') {
-          throw new Error('Alter muss eine Zahl sein.');
+          throw new Error('Age must be a number');
       }
       if (value < 0) {
-          throw new Error('Alter darf nicht kleiner 0 sein.')
+          throw new Error('Age must not be less than 0')
       }
     }
-    console.log(`Schreibe "${target[property]}" in Eigenschaft "${property}"`);
+    console.log(`Write "${target[property]}" to property "${property}"`);
     target[property] = value;
   }
 }
-
+ 
 const proxy = new Proxy(person, handler);
-proxy.age = -42;
+proxy.age = -42; // Error: Age must not be less than 0.

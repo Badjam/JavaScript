@@ -18,34 +18,34 @@ class UserRepository {
 
 const repository = new UserRepository();
 
-// Verwenden von await
-async function saveAndFindMoritz() {
-  const moritz = {
+// Using await
+async function saveAndFindJames() {
+  const james= {
     id: 4712,
-    firstName: 'Moritz',
-    lastName: 'Mustermann'
+    firstName: 'James',
+    lastName: 'Doe'
   };
   try {
-    const result = await repository.save(moritz);
+    const result = await repository.save(james);
     const user = await repository.find(result.id);
     console.log(user);
   } catch (error) {
     console.error(error);
   }
 }
-saveAndFindMoritz();
+saveAndFindJames();
 
-// Verwenden von Promises
-function saveAndFindMax() {
-  const max = {
+// Using promises
+function saveAndFindJohn() {
+  const john = {
     id: 4711,
-    firstName: 'Max',
-    lastName: 'Mustermann'
+    firstName: 'John',
+    lastName: 'Doe'
   };
-  repository.save(max)
+  repository.save(john)
     .then(result => repository.find(result.id))
     .then(user => console.log(user))
     .catch(error => console.error(error));
 }
 
-saveAndFindMax();
+saveAndFindJohn();

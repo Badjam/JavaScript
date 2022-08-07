@@ -1,11 +1,11 @@
 'use strict';
 const targetObject = {
-  firstName: null,
+  firstName: null, 
   lastName: null
 };
-const handler = {/* wird gleich implementiert*/};
-const proxy = Proxy(targetObject, handler);
-proxy.firstName = 'Max';
-proxy.lastName = 'Mustermann';
+const handler = {/* is about to be implemented */};
+const proxy = new Proxy(targetObject, handler);
+proxy.firstName = 'John';
+proxy.lastName = 'Doe';
 console.log(proxy.firstName);
 console.log(proxy.lastName);

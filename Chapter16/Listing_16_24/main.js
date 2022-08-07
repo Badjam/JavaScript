@@ -1,17 +1,18 @@
 'use strict';
 const artists = [
-  'Deep Purple',
-  'Jimi Hendrix',
-  'The Doors',
+  'Deep Purple', 
+  'Jimi Hendrix', 
+  'The Doors', 
   'King Crimson'
 ];
 function createIterator(array) {
   let counter = array.length-1;
-// Rückgabe des Iteratorobjekts
+  // Return of the iterator object
   return {
     next: function(){
       if (counter < 0) {
         return {
+          value: undefined, 
           done: true
         };
       } else {
@@ -24,13 +25,13 @@ function createIterator(array) {
   }
 };
 const iterator = createIterator(artists);
-const artist = iterator.next(); // erster Wert im Iterator
-console.log(artist);          // Ausgabe: {value: 'King Crimson', done: false}
-artist = iterator.next();     // weiter im Iterator
-console.log(artist);          // Ausgabe: {value: 'The Doors', done: false}
-artist = iterator.next();     // weiter im Iterator
-console.log(artist);          // Ausgabe: {value: 'Jimi Hendrix', done: false}
-artist = iterator.next();     // weiter im Iterator
-console.log(artist);          // Ausgabe: {value: 'Deep Purple', done: false}
-artist = iterator.next();     // weiter im Iterator
-console.log(artist);          // Ausgabe: {done: true}
+const artist = iterator.next();    // First value in the iterator
+console.log(artist);               // Output: {value: 'King Crimson', done: false}
+artist = iterator.next();          // Continue in the iterator
+console.log(artist);               // Output: {value: 'The Doors', done: false}
+artist = iterator.next();          // Continue in the iterator
+console.log(artist);               // Output: {value: 'Jimi Hendrix', done: false}
+artist = iterator.next();          // Continue in the iterator
+console.log(artist);               // Output: {value: 'Deep Purple', done: false}
+artist = iterator.next();          // Continue in the iterator
+console.log(artist);               // Output: {value: undefined, done: true}

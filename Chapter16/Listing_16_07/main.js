@@ -1,20 +1,20 @@
 'use strict';
 asyncFunction(
   (error, result) => {
-    // weiterer Code
+    // more code
     asyncFunction2(
-      // weiterer Code
+      // more code
       (error2, result2) => {
-        // weiterer Code
+        // more code
         asyncFunction3(
           (error3, result3) => {
-            // weiterer Code
+            // more code
             asyncFunction4(
               (error4, result4) => {
-                // weiterer Code
+                // more code
                 asyncFunction5(
                   (error5, result5) => {
-                    // weiterer Code
+                    // more code
                   }
                 );
               }

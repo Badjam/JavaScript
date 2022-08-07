@@ -1,7 +1,8 @@
 'use strict';
-const promise1 = Promise.resolve('1');
-const promise2 = Promise.reject('2');
-const promise3 = Promise.resolve('3');
+const promise1 = new Promise((resolve, reject) => resolve('1'));
+const promise2 = new Promise((resolve, reject) => reject('2'));
+const promise3 = new Promise((resolve, reject) => resolve('3'));
+ 
 Promise
   .any([promise1, promise2, promise3])
   .then((result) => {
@@ -10,7 +11,9 @@ Promise
   .catch((error) => {
     console.error(`Error: ${error}`);
   });
-// Ausgabe: 1
+ 
+// Output: 1
+ 
 Promise
   .any([promise2])
   .then((result) => {
@@ -19,4 +22,5 @@ Promise
   .catch((error) => {
     console.error(`Error: ${error}`);
   });
-// Ausgabe: "Error: AggregateError: All promises were rejected"
+ 
+// Output: "Error: AggregateError: All promises were rejected"

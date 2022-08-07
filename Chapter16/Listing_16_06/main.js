@@ -3,29 +3,30 @@ function asyncFunction(callbackFunction) {
   let result;
   setTimeout(
     () => {
-      // Das hier passiert erst nach zwei Sekunden.
+      // This only happens after two seconds.
       result = Math.floor(Math.random() * 100) + 1;
-      if (result >= 50) {
+      if(result >= 50) {
         callbackFunction(
-          null,          // null --> kein Fehler
-          result         // Ergebniswert
+          null,          // null --> no error
+          result         // result value
         );
-      } else {
-        callbackFunction(
-          new Error(`Zufallszahl ${result} kleiner als 50.`), // Fehler
-          undefined                                           // kein Ergebniswert
+       } else {
+         callbackFunction(
+          new Error(`random number ${result} less than 50.`), // Error
+          undefined                                           // no result value
         );
-      }
-    },
-    2000
+       }
+     }, 
+     2000
   );
 }
+
 asyncFunction(
   (error, result) => {
-    if (error) {
-      console.error(error); // Fehlerbehandlung im Callback
+    if(error) {
+      console.error(error);  // Error handling in the callback
     } else {
-      console.log(result); // Ergebnisbehandlung im Callback
+      console.log(result);   // Result handling in the callback
     }
   }
 );
