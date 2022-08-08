@@ -3,14 +3,14 @@ function draw() {
   if (canvas.getContext){
     const context = canvas.getContext('2d');
     const path = new Path2D();
-    path.moveTo(25,100);
+    path.moveTo(25,100);    // Starting point
     path.quadraticCurveTo(
-      25,                   // Kontrollpunkt x-Koordinate
-      25,                   // Kontrollpunkt y-Koordinate
-      100,                  // Endpunkt x-Koordinate
-      25                    // Endpunkt y-Koordinate
+      25,                   // control point x coordinate
+      25,                   // control point y coordinate
+      100,                  // target point x coordinate
+      25                    // target point y coordinate
     );
-    context.stroke(path);
+    context.stroke(path);    
   }
 }
 document.addEventListener('DOMContentLoaded', draw);

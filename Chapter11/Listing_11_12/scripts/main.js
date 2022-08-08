@@ -3,16 +3,16 @@ function draw() {
   if (canvas.getContext){
     const context = canvas.getContext('2d');
     const path = new Path2D();
-    path.moveTo(25,100);
+    path.moveTo(25,100);  // Starting point
     path.bezierCurveTo(
-      100,              // Kontrollpunkt x1-Koordinate
-      100,              // Kontrollpunkt y1-Koordinate
-      25,               // Kontrollpunkt x2-Koordinate
-      25,               // Kontrollpunkt y2-Koordinate
-      100,              // Endpunkt x-Koordinate
-      25                // Endpunkt y-Koordinate
+      100,                // control point x1 coordinate
+      100,                // control point y1 coordinate
+      25,                 // control point x2 coordinate
+      25,                 // control point y2 coordinate
+      100,                // target point x coordinate
+      25                  // target point y coordinate
     );
-    context.stroke(path);
+    context.stroke(path);    
   }
 }
 document.addEventListener('DOMContentLoaded', draw);

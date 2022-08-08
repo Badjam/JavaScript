@@ -3,16 +3,16 @@ function draw() {
   if (canvas.getContext){
     const context = canvas.getContext('2d');
     const path = new Path2D();
-    path.moveTo(25,200);
+    path.moveTo(25,200);  // Starting point
     path.arcTo(
-      25,               // Kontrollpunkt x1-Koordinate
-      25,               // Kontrollpunkt y1-Koordinate
-      200,              // Kontrollpunkt x2-Koordinate
-      25,               // Kontrollpunkt y2-Koordinate
-      90                // Radius
+      25,                 // x coordinate first control point
+      25,                 // y coordinate first control point
+      200,                // x coordinate second control point
+      25,                 // y coordinate second control point
+      90                  // Radius of arc
     );
-    path.lineTo(200, 25);
-    context.stroke(path);
+    path.lineTo(200, 25); // Target point
+    context.stroke(path);    
   }
 }
 document.addEventListener('DOMContentLoaded', draw);

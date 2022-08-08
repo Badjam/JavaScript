@@ -1,19 +1,19 @@
 'use strict';
 function draw() {
   const canvas = document.getElementById('canvas');
-  if (canvas.getContext){
+  if (canvas.getContext) {
     const context = canvas.getContext('2d');
-    const gradient = context.createLinearGradient(        // Erstellen des Farbverlaufs
-      0,                                                // x-Koordinate Startpunkt
-      0,                                                // y-Koordinate Startpunkt
-      0,                                                // x-Koordinate Endpunkt
-      150                                               // y-Koordinate Endpunkt
+    const gradient = context.createLinearGradient(      // Create gradient
+      0,                                                // x coordinate starting point
+      0,                                                // y coordinate starting point
+      0,                                                // x coordinate end point
+      150                                               // y coordinate end point
     );
-    gradient.addColorStop(0, '#FF0000');                // erster Farbwert
-    gradient.addColorStop(0.5, '#00FF00');              // zweiter Farbwert
-    gradient.addColorStop(1, '#0000FF');                // dritter Farbwert
-    context.fillStyle = gradient;                       // Zuweisen des Stils
-    context.fillRect(20, 20, 460, 240);                 // Zeichnen eines Rechtecks
+    gradient.addColorStop(0, '#FF0000');                // first color value
+    gradient.addColorStop(0.5, '#00FF00');              // second color value
+    gradient.addColorStop(1, '#0000FF');                // third color value
+    context.fillStyle = gradient;                       // Assign style
+    context.fillRect(20, 20, 460, 240);                 // Draw rectangle
   }
 }
 document.addEventListener('DOMContentLoaded', draw);

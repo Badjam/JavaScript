@@ -3,7 +3,7 @@ function init() {
   const svgDocument = document.getElementById('svg');
   const circle = svg.getElementById('circle');
   circle.addEventListener('click', (e) => {
-    console.log('Hallo Welt');
+    console.log('Hello World');
   });
   circle.addEventListener('mouseover', (e) => {
     circle.classList.toggle('active');
@@ -12,4 +12,5 @@ function init() {
     circle.classList.toggle('active');
   });
 }
+
 window.addEventListener('DOMContentLoaded', init);
