@@ -3,14 +3,14 @@ function handler(ev) {
   const target = e.target || e.srcElement;
   this.classList.toggle('selected');
   console.log(
-    `Geklickt auf Knoten mit ID "${target.id}"`
+    `Clicked on node with ID "${target.id}"`
   );
   console.log(
-    `Event an Knoten mit ID "${this.id}"`
+    `Event at node with ID "${this.id}"`
   );
-  if(this.classList.contains('level2')) {             // Sobald Level 2 erreicht ist ...
-    e.stopPropagation();                              // ... wird das Event nicht ...
-  }                                                   // ... weitergereicht.
+  if(this.classList.contains('level2')) {          // Once level 2 has been reached ...
+    e.stopPropagation();                           // ... the event will not ...
+  }                                                // ... be forwarded.
 }
 function init() {
   const elements = document.querySelectorAll('.level1, .level2, .level3');

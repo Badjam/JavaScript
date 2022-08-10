@@ -8,7 +8,7 @@ function init() {
   element.addEventListener(
     'click',
     (event) => {
-      console.log('Element geklickt');
+      console.log('Element clicked');
     },
     false
   );

@@ -1,18 +1,17 @@
 function init() {
   const element = document.getElementById('example')
   const event = new Event(
-    'beispiel',            // Typ des Events
-    {
-      bubbles: true,       // Bubbling erlauben
-      cancelable: false    // Standardaktionen können nicht ...
-                           // ... verhindert werden.
-    });
-
+  'example',             // Type of the event
+  {
+    bubbles: true,       // Allow bubbling
+    cancelable: false    // Default actions cannot ...
+                         // ... be prevented.
+  });
   element.addEventListener(
-    'beispiel',                           // Typ des Events
+    'example',                            // Type of event
     (event) => {
-      console.log('Ereignis ausgelöst');
-      console.log(event.type);            // "beispiel"
+      console.log('Event triggered');
+      console.log(event.type);            // "example"
     },
     false
   );

@@ -1,5 +1,5 @@
 function handleLinkClicked(e) {
-  console.log('Link geklickt');
+  console.log('Link clicked');
   stopDefault(e);
 }
 

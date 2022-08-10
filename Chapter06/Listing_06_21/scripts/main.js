@@ -1,8 +1,8 @@
 function init() {
   window.addEventListener('keydown', (event) => {
     if (event.key !== undefined) {
-      // Enthalten in aktuellem Entwurf der DOM Events API
-      // Unterstützt beispielsweise von Firefox und Internet Explorer
+      // Included in current draft of DOM Events API.
+      // Supported by Firefox and Internet Explorer, for example. 
       console.log(event.key);
       switch (event.key) {
         case 'ArrowUp':
@@ -20,8 +20,8 @@ function init() {
         default: return;
       }
     } else if (event.keyIdentifier !== undefined) {
-      // Enthalten in ältererem Entwurf der DOM Events API
-      // Unterstützt beispielsweise von Chrome und Safari
+      // Included in older draft of DOM Events API.
+      // Supported by Chrome and Safari, for example.
       console.log(event.keyIdentifier);
       switch (event.keyIdentifier) {
         case 'Up':
@@ -39,7 +39,7 @@ function init() {
         default: return;
       }
     } else if (event.keyCode !== undefined) {
-      // Veraltet
+      // obsolete
     }
   });
 

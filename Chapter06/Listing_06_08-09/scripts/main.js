@@ -1,21 +1,21 @@
 function checkAgeNotNegative() {
-  const output = document.getElementById('output');           // Container für Meldung
-  const element = document.getElementById('age');             // Eingabefeld Alter
-  const age = element.value;                                  // Aktueller Wert Alter
-  if(age < 0) {                                             // Falls Wert negativ ...
-    output.textContent = 'Alter kann nicht negativ sein.';  // ... gebe Meldung aus ...
-  } else {                                                  // ... ansonsten ...
-    output.textContent = '';                                // ... lösche Meldung.
+  const output = document.getElementById('output');      // Container for message
+  const element = document.getElementById('age');        // Input field for age
+  const age = element.value;                             // Current age value
+  if(age < 0) {                                          // If value is negative ...
+    output.textContent = 'Age cannot be negative.';      // ... output an error ...
+                                                         // ... message...
+  } else {                                               // ... else ...
+    output.textContent = '';                             // ... delete message.
   }
 }
 
 function init() {
-  const element = document.getElementById('age');       // Element holen
-  element.addEventListener(                           // Event-Listener registrieren
-    'blur',                                           // Name des Events
-    checkAgeNotNegative,                              // Name des Event-Listeners
-    false                                             // Ereignisfluss, Details später
+  const element = document.getElementById('age');    // Get element
+  element.addEventListener(                          // Register event listener
+    'blur',                                          // Name of the event
+    checkAgeNotNegative,                             // Name of the event listener
+    false                                            // Event flow, details to follow later on
   );
 }
-
 document.addEventListener('DOMContentLoaded', init);

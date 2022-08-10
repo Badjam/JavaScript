@@ -9,8 +9,8 @@ function handleClickEvent2(ev) {
   e.stopPropagation();
 }
 function init() {
-  var elements = document.querySelectorAll('.level1, .level2, .level3');
-  for(var i=0; i<elements.length; i++) {
+  const elements = document.querySelectorAll('.level1, .level2, .level3');
+  for(let i=0; i<elements.length; i++) {
     elements[i].addEventListener('click', handleClickEvent1);
     elements[i].addEventListener('click', handleClickEvent2);
   }

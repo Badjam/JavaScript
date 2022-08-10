@@ -1,19 +1,19 @@
 function init() {
   const element = document.getElementById('example')
-  const event = new CustomEvent('beispiel', {
+  const event = new CustomEvent('example', {
     detail: {
-      firstName: 'Max',
-      lastName: 'Mustermann',
+      firstName: 'John',
+      lastName: 'Doe',
       id: 4711
     }
   });
   element.addEventListener(
-    'beispiel',
+    'example',
     (event) => {
-      console.log('Ereignis ausgelöst');
-      console.log(event.type);             // "beispiel"
-      console.log(event.detail.firstName); // "Max"
-      console.log(event.detail.lastName);  // "Mustermann"
+      console.log('Event triggered');
+      console.log(event.type);             // "example"
+      console.log(event.detail.firstName); // "John"
+      console.log(event.detail.lastName);  // "Doe"
       console.log(event.detail.id);        // 4711
     },
     false
