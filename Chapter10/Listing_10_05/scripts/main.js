@@ -1,11 +1,11 @@
 jQuery(document).ready(() => {
-  console.log('Webseite geladen');
+  console.log('Web page loaded');
 });
 
 $(document).ready(() => {
-  console.log('Webseite geladen');
+  console.log('Web page loaded');
 });
 
 $(() => {
-  console.log('Webseite geladen');
+  console.log('Web page loaded');
 });

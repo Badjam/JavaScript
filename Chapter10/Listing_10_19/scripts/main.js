@@ -1,4 +1,4 @@
 'use strict';
 $(document).ready(() => {
-  console.log('Webseite geladen');
+  console.log('Web page loaded');
 });

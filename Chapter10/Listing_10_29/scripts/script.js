@@ -20,7 +20,7 @@ function loadContent(name) {
       textStatus,
       jqXHRObject
     ) => {
-      console.log('HTML geladen');
+      console.log('HTML loaded');
     }
   );
 }

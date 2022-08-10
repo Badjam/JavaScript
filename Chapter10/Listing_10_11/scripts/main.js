@@ -1,25 +1,30 @@
 'use strict';
 $(document).ready(() => {
-  // Hinzufügen von neuem HTML-Inhalt
-  $('#main').html('<div>Neuer Inhalt</div>');
-  // Zugriff auf den HTML-Inhalt
+  // Add new HTML content
+  $('#main').html('<div>New content</div>');
+  // Access the HTML content
   const htmlContent = $('#main').html();
-  // Hinzufügen von neuem Textinhalt
-  $('#main').text('Neuer Textinhalt');
-  // Zugriff auf den Textinhalt
+
+  // Add new text content
+  $('#main').text('New text content');
+  // Access the text content
   const textContent = $('#main').text();
-  // Hinzufügen von neuem Inhalt hinter den
-  // bestehenden Inhalt jedes <div>-Elements
-  // mit der CSS-Klasse "example"
-  $('div.example').append('<p>Beispiel</p>');
-  // Hinzufügen von neuem Inhalt vor den
-  // bestehenden Inhalt jedes <div>-Elements
-  // mit der CSS-Klasse "example"
-  $('div.example').prepend('<p>Beispiel</p>');
-  // Hinzufügen von neuem Inhalt hinter jedes
-  // <div>-Element mit der CSS-Klasse "example"
-  $('div.example').after('<p>Beispiel</p>');
-  // Hinzufügen von neuem Inhalt vor jedes
-  // <div>-Element mit der CSS-Klasse "example"
-  $('div.example').before('<p>Beispiel</p>');
+
+  // Add new content after the 
+  // existing content of each <div> element
+  // with the CSS class "example"
+  $('div.example').append('<p>Example</p>');
+
+  // Add new content before the 
+  // existing content of each <div> element
+  // with the CSS class "example"
+  $('div.example').prepend('<p>Example</p>');
+
+  // Add new content after each 
+  // <div> element with the CSS class "example"
+  $('div.example').after('<p>Example</p>');
+
+  // Add new content before each 
+  // <div> element with the CSS class "example"
+  $('div.example').before('<p>Example</p>');
 });

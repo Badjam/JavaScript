@@ -1,11 +1,11 @@
 'use strict';
 $(document).ready(() => {
-  $('#main').animate(
-    { opacity: 0.75 },  // Eigenschaften
-    'fast',             // Geschwindigkeit
-    'swing',            // Easing
+  $('main').animate(
+    { opacity: 0.75 }, // Properties
+    'fast',            // Speed
+    'swing',           // Easing 
     () => {
-      // Animation abgeschlossen
+      // Animation completed
     }
   );
 });

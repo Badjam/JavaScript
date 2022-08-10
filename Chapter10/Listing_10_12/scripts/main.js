@@ -1,21 +1,21 @@
 'use strict';
 $(document).ready(() => {
-  // Auswahl des dritten <li>-Elements
+  // Selection of the third <li> element
   $('li').eq(2);
-  // Auswahl des ersten <li>-Elements
+  // Selection of the first <li> element
   $('li').first();
-  // Auswahl der <li>-Elemente, die die CSS-Klasse ".selected" haben
+  // Selection of <li> elements that have the CSS class ".selected"
   $('li').filter('.selected');
-  // Auswahl aller <li>-Elemente, die ein <ul>-Element enthalten
+  // Selection of all <li> elements that contain a <ul> element
   $('li').has('ul');
-  // Auswahl aller Elemente, die die CSS-Klasse ".selected" haben
+  // Selection of all elements that have the CSS class ".selected"
   $('li').has('.selected');
-  // Auswahl des letzten <li>-Elements
+  // Selection of the last <li> element
   $('li').last();
-  // Auswahl aller class-Attribute der <li>-Elemente
+  // Selection of all class attributes of the <li> elements
   $('li').map(() => { this.className });
-  // Auswahl aller <li>-Elemente, die nicht die CSS-Klasse ".selected" haben
+  // Selection of all <li> elements that do not have the CSS class ".selected"
   $('li').not('.selected');
-  // Auswahl der ersten zwei <li>-Elemente
+  // Selection of the first two <li> elements
   $('li').slice(0, 2);
 });

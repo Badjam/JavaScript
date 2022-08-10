@@ -2,12 +2,12 @@
 $(document).ready(() => {
   $('input#username')
     .keypress((event) => {
-      console.log('Taste zur Eingabe des Nutzernamens gedrückt.');
+      console.log('Key for entering username pressed.');
     })
     .keydown((event) => {
-      console.log('Taste wird gedrückt.');
+      console.log('Key is pressed.');
     })
     .keyup((event) => {
-      console.log('Taste zur Eingabe des Nutzernamens losgelassen.');
+      console.log('Key for entering username released.');
     });
 });

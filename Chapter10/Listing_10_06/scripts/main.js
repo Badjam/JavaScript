@@ -1,3 +1,3 @@
 $(document).ready(() => {
-  const newElement = $('<div>Neues Element</div>');
+  const newElement = $('<div>New Element</div>');
 });

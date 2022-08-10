@@ -1,22 +1,22 @@
 'use strict';
 $(document)
   .ajaxStart(() => {
-    console.log('Anfrage gestartet.');
+    console.log('Request started.');
   })
   .ajaxSend((event, request, settings) => {
-    console.log('Anfrage abgeschickt.');
+    console.log('Request sent.');
   })
   .ajaxSuccess((event, request, settings, data) => {
-    console.log('Anfrage erfolgreich abgeschlossen');
+    console.log('Request completed successfully');
   })
   .ajaxError((event, request, settings, error) => {
-    console.log('Fehler bei Anfrage: ' + error);
+    console.log('Error on request: ' + error);
   })
   .ajaxComplete((event, request, settings) => {
-    console.log('Anfrage abgeschlossen.');
+    console.log('Request completed.');
   })
   .ajaxStop(() => {
-    console.log('Alle Anfragen abgeschlossen.');
+    console.log('All requests completed.');
   });
 
 $(document).ready(() => {

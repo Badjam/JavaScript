@@ -1,34 +1,36 @@
 'use strict';
 $(document).ready(() => {
-  // Kindelemente
-  // Auswahl aller Kindelemente von <ul>
+  // Child elements
+  // Selection of all child elements of <ul>
   const listItems = $('ul').children();
-  // Auswahl des nächsten Links innerhalb von <ul>
+  // Selection of the next link within <ul>
   const closestLink = $('ul').closest('a');
-  // Geschwisterelemente
-  // Auswahl des nächsten Geschwisterelements
+
+  // Sibling elements
+  // Selection of the next sibling element
   const nextSibling = $('ul').next();
-  // Auswahl des nächsten Linkelements
+  // Selection of the next link element
   const nextSiblingLink = $('ul').next('a');
-  // Auswahl aller nächsten Geschwisterelemente
+  // Selection of all next sibling elements
   const nextSiblings = $('ul').nextAll();
-  // Auswahl aller nächsten Linkelemente
+  // Selection of all next link elements
   const nextSiblingLinks = $('div').nextAll('a');
-  // Auswahl aller nächsten Geschwisterelemente bis zu bestimmtem Element
+  // Selection of all next sibling elements up to the specified element
   const nextSiblingsUntil = $('div').nextUntil('a');
-  // Auswahl des vorherigen Geschwisterelements
+  // Selection of the previous sibling element
   const previousSibling = $('ul').prev();
-  // Auswahl aller vorherigen Geschwisterelemente
+  // Selection of all previous sibling elements
   const previousSiblings = $('ul').prevAll();
-  // Auswahl aller vorherigen Geschwisterelemente bis zu bestimmtem Element
-  const previousSiblingsUntil = $('div').prevUntil('a');  
-  // Auswahl aller Geschwisterelemente
+  // Selection of all previous sibling elements up to the specified element
+  const previousSiblingsUntil = $('div').prevUntil('a');
+  // Selection of all sibling elements
   const siblings = $('div').siblings();
-  // Elternelemente
-  // Auswahl des Elternelements
+
+  // Parent elements
+  // Selection of the parent element
   const parent = $('ul').parent();
-  // Auswahl aller Vorfahrenelemente
+  // Selection of all parent elements
   const parents = $('ul').parents();
-  // Auswahl aller Vorfahrenelemente bis zu bestimmtem Element
+  // Selection of all parent elements up to the specified element
   const parentsUntil = $('ul').parentsUntil('div');
 });

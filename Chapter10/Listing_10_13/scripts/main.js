@@ -1,19 +1,19 @@
 'use strict';
 $(document).ready(() => {
   const element = $('a#main');
-  // lesender Zugriff auf das Attribut "href" des Elements
+  // Read access to the "href" attribute of the element
   const href = element.attr('href');
-  // schreibender Zugriff auf das Attribut "href" des Elements
+  // Write access to the "href" attribute of the element
   element.attr('href', 'index.html');
-  // alternativer schreibender Zugriff über Konfigurationsobjekt
+  // Alternative write access via configuration object
   element.attr({
     href: 'index.html',
     target: '_blank'
   });
-  // Enfernen des Attributs "href" aus dem Element
+  // Remove the "href" attribute from the element
   element.removeAttr('href');
-  // Hinzufügen einer CSS-Klasse
+  // Add a CSS class
   element.addClass('highlighted');
-  // Entfernen einer CSS-Klasse
+  // Remove a CSS class
   element.removeClass('highlighted');
 });

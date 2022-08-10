@@ -2,15 +2,15 @@
 $(document).ready(() => {
   $('input#username')
     .focus((event) => {
-      console.log('Eingabefeld fokussiert.');
+      console.log('Input field focused.');
     })
     .blur((event) => {
-      console.log('Eingabefeld nicht mehr fokussiert.');
+      console.log('Input field no longer focused.');
     })
     .change((event) => {
-      console.log('Text geändert.');
+      console.log('Text changed.');
     })
     .select((event) => {
-      console.log('Text ausgewählt.');
+      console.log('Text selected.');
     });
 });
