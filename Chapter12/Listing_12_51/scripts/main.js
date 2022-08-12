@@ -20,7 +20,7 @@ function getPosition() {
     map.setCenter(googlePosition);
   }
   function errorHandler(error) {
-    // Nutzer verweigert Positionsermittlung.
+    // User refuses position determination
   }
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(successHandler, errorHandler);

@@ -8,23 +8,24 @@ function init() {
   };
   request.onsuccess = (event) => {
     const database = event.target.result;
-    const transaction = database.transaction(              // Öffnen der Transaktion
+    const transaction = database.transaction(             // Open the transaction
       'Books',
-      'readwrite'                                          // schreibender Zugriff
+      'readwrite'                                         // Write access
     );
-    const objectStore = transaction.objectStore('Books');  // Öffnen des Objektspeichers
-    const request = objectStore.get('978-1-4932-2286-5');  // Lesen des Objekts
+    const objectStore = transaction.objectStore('Books'); // Open the object store
+    const request = objectStore.get('978-3-8362-7272-8'); // Read the object
     request.onerror = (event) => {
       console.error(event.target.error.message);
     };
     request.onsuccess = (event) => {
       const book = request.result;
-      // Update the object
-      book.title = ' JavaScript: The Comprehensive Guide by Philip Ackermann'
-      const requestUpdate = objectStore.put(book);         // Speichern des Objekts
+      book.title = 'Schrödinger programmiert Java'         // Update the object
+        + ' - Das etwas andere Fachbuch';
+      const requestUpdate = objectStore.put(book);         // Store the object
       requestUpdate.onerror = (event) => { };
       requestUpdate.onsuccess = (event) => { };
     };
   };
+
 }
 document.addEventListener('DOMContentLoaded', init);

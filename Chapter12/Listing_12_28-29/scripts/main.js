@@ -1,24 +1,18 @@
 'use strict';
 function init() {
-  const idbFactory = window.indexedDB;    // Zugriff auf das Helferobjekt
-  const request = idbFactory.open(        // Öffnen der Datenbank ...
-    'TestDatabase',                       // ... anhand des Namens ...
-    1                                     // ... und optional der Version.
+  const idbFactory = window.indexedDB;     // Access to the helper object
+  const request = idbFactory.open(         // Open the database...
+    'TestDatabase',                        // ... based on the name...
+    1                                      // ... and optionally the version
   );
-  request.onerror = (event) => {          // Event-Handler für den Fehlerfall
-    const error = event.target.error;     // Zugriff auf den Fehler
-    console.error(error.message);         // Ausgabe des Fehlers
+  request.onerror = (event) => {           // Event handler in case of error
+    const error = event.target.error;      // Access to the error
+    console.error(error.message);          // Output of the error
   };
-  request.onsuccess = (event) => {        // Event-Handler für den Normalfall
-    const database = event.target.result; // Zugriff auf die Datenbank
-    console.log(database.name);           // Ausgabe: "TestDatabase"
-    console.log(database.version);        // Ausgabe: 1
+  request.onsuccess = (event) => {         // Event handler for the normal case
+    const database = event.target.result;  // Access to the database
+    console.log(database.name);            // Output: "TestDatabase"
+    console.log(database.version);         // Output: 1
   };
-
-  request.onupgradeneeded = (event) => {
-    console.log(event.oldVersion);        // Alte Version der Datenbank
-    console.log(event.newVersion);        // Neue Version der Datenbank
-    const database = event.target.result;   // Zugriff auf die Datenbank
-  }
 }
 document.addEventListener('DOMContentLoaded', init);

@@ -1,4 +1,4 @@
-// Datei: cookie-utils.js
+// File: cookie-utils.js
 function createCookie(name, value, days) {
   let expires = '';
   if (days) {
@@ -8,6 +8,7 @@ function createCookie(name, value, days) {
   }
   document.cookie = name + '=' + value + expires + '; path=/';
 }
+
 function readCookie(name) {
   const nameEQ = name + '=';
   const ca = document.cookie.split(';');
@@ -22,6 +23,7 @@ function readCookie(name) {
   }
   return null;
 }
+
 function deleteCookie(name) {
   createCookie(name, '', -1);
 }

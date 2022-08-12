@@ -25,7 +25,7 @@ function init() {
     }
     document.getElementById('files').addEventListener('change', handleFileSelected, false);
   } else {
-    alert('File API nicht vollständig durch den Browser unterstützt');
+    alert('File API not supported by this browser');
   }
 }
 document.addEventListener('DOMContentLoaded', init);

@@ -5,6 +5,7 @@ connection.onmessage = (event) => {
     const data = JSON.parse(event.data);
     console.log(data);
   } catch (error) {
-    console.error('Fehler beim Parsen');
+    console.error('Error parsing');
   }
 };
+

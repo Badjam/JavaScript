@@ -6,7 +6,7 @@ const MAX = 20;
 
 const server = http.createServer((request, response) => {
   if (request.headers.accept && request.headers.accept === 'text/event-stream') {
-    // URL für die Event-Quelle
+    // URL for the event source
     if (request.url === '/events') {
       sendEvent(request, response);
     } else {
@@ -14,15 +14,13 @@ const server = http.createServer((request, response) => {
       response.end();
     }
   } else {
-    // URL für die HTML-Datei
+    // URL for the HTML file
     response.writeHead(200, {'Content-Type': 'text/html'});
     response.write(fs.readFileSync(__dirname + '/index.html'));
     response.end();
   }
 })
-server.listen(8000, () => {
-  console.log('Server gestartet unter http://localhost:8000')
-});
+server.listen(8000);
 
 function sendEvent(request, response) {
   response.writeHead(200, {
@@ -43,7 +41,7 @@ function sendEvent(request, response) {
 function createServerSendEvent(response, id) {
   const exercise = createRandomExercise();
   response.write('id: ' + id + '\n');
-  response.write("data: " + exercise + '\n\n');
+  response.write('data: ' + exercise + '\n\n');
 }
 
 function createRandomExercise() {

@@ -8,17 +8,17 @@ function init() {
   };
   request.onsuccess = (event) => {
     const database = event.target.result;
-    const transaction = database.transaction('Books');     // Öffnen der Transaktion
-    const objectStore = transaction.objectStore('Books');  // Öffnen des Objektspeichers
-    const request = objectStore.get('978-1-4932-2286-5');  // Suche nach Schlüssel
-    request.onerror = (event) => {                         // Event-Handler für Fehlerfall
-      console.error(event.target.error.message);           // Ausgabe der Fehlermeldung
+    const transaction = database.transaction('Books');    // Open the transaction
+    const objectStore = transaction.objectStore('Books'); // Open the object store
+    const request = objectStore.get('978-3-8362-5687-2'); // Search for key
+    request.onerror = (event) => {                        // Event handler for ... 
+      // ... Error case
+      console.error(event.target.error.message);          // Output of the error message
     };
-    request.onsuccess = (event) => {                       // Event-Handler für Normalfall
-      console.log(event)
-      console.log(request.result);                         // Ausgabe des Objekts
+    request.onsuccess = (event) => {                      // Event handler for ...
+      // ... Normal case
+      console.log(request.result);                        // Output of the object
     };
   };
-
 }
 document.addEventListener('DOMContentLoaded', init);

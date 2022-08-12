@@ -1,73 +1,74 @@
-(function() {
-  // Werte im Browserspeicher speichern
-  localStorage.setItem('firstname', 'Max');
-  localStorage.setItem('lastname', 'Mustermann');
+(function () {
+  localStorage.setItem('firstname', 'John');
+  localStorage.setItem('lastname', 'Doe');
 
-  sessionStorage.setItem('firstname', 'Max');
-  sessionStorage.setItem('lastname', 'Mustermann');
+  sessionStorage.setItem('firstname', 'John');
+  sessionStorage.setItem('lastname', 'Doe');
 
   const user = {
-    firstname: 'Max',
-    lastname: 'Mustermann'
+    firstname: 'John',
+    lastname: 'Doe'
   }
   localStorage.setItem(
     'user',
-    user                   // Falsch: die Zeichenkette [object Object] wird gespeichert
+    user                  // Incorrect: The string [object Object] is stored.
   );
   localStorage.setItem(
     'user',
-    JSON.stringify(user)  // Richtig: das Objekt wird im JSON-Format gespeichert
+    JSON.stringify(user)  // Correct: The object is stored in JSON format.
   );
+
 })();
 
-(function() {
-  // Werte aus dem Browserspeicher lesen
-  const firstname = localStorage.getItem('firstname');
-  const lastname = localStorage.getItem('lastname');
-  console.log(firstname);                             // Max
-  console.log(lastname);                              // Mustermann
+(function () {
+  const firstname = localStorage.getItem('firstname');  // Reading the value 
+  // of the "firstname" property
+  const lastname = localStorage.getItem('lastname'); // Reading the value 
+  // of the "lastname" property
+  console.log(firstname);                               // John
+  console.log(lastname);                                // Doe
 
   let user = localStorage.getItem('user');
   user = JSON.parse(user);
-  console.log(user.firstname);                        // Max
-  console.log(user.lastname);                         // Mustermann
+  console.log(user.firstname);                        // John
+  console.log(user.lastname);                         // Doe
+
 })();
 
-(function() {
-  // Werte im Browserspeicher aktualisieren
-  localStorage.setItem('firstname', 'Max');
-  localStorage.setItem('lastname', 'Mustermann');
-  const firstname = localStorage.getItem('firstname');
-  const lastname = localStorage.getItem('lastname');
-  console.log(firstname);                             // Max
-  console.log(lastname);                              // Mustermann
-  localStorage.setItem('firstname', 'Moritz');
-  localStorage.setItem('lastname', 'Peterson');
-  firstname = localStorage.getItem('firstname');
-  lastname = localStorage.getItem('lastname');
-  console.log(firstname);                             // Moritz
-  console.log(lastname);                              // Peterson
-})();
-
-(function() {
-  // Auf Änderungen im Browserspeicher reagieren
-  window.addEventListener('storage', function(event) {
-    console.log(event.key);
-    console.log(event.oldValue);
-    console.log(event.newValue);
-    console.log(event.url)
-    console.log(event.storageArea);
-  });
-  localStorage.setItem('firstname', 'Max');
-  localStorage.setItem('lastname', 'Mustermann');
+(function () {
+  localStorage.setItem('firstname', 'John');
+  localStorage.setItem('lastname', 'Doe');
   let firstname = localStorage.getItem('firstname');
   let lastname = localStorage.getItem('lastname');
-  console.log(firstname);                             // Max
-  console.log(lastname);                              // Mustermann
-  localStorage.setItem('firstname', 'Moritz');
+  console.log(firstname);                             // John
+  console.log(lastname);                              // Doe
+  localStorage.setItem('firstname', 'James');
   localStorage.setItem('lastname', 'Peterson');
   firstname = localStorage.getItem('firstname');
   lastname = localStorage.getItem('lastname');
-  console.log(firstname);                             // Moritz
-  console.log(lastname);                              // Peterson
+  console.log(firstname);                             // James
+  console.log(lastname);                              // Peterson  
+})();
+
+(function () {
+  localStorage.setItem('firstname', 'John');
+  localStorage.setItem('lastname', 'Doe');
+  const firstname = localStorage.getItem('firstname');
+  const lastname = localStorage.getItem('lastname');
+  console.log(firstname);     // John
+  console.log(lastname);      // Doe
+  localStorage.removeItem('firstname');
+  localStorage.removeItem('lastname');
+
+})();
+
+(function () {
+  window.addEventListener('storage', (e) => {
+    console.log(e.key);             // Key of the updated entry
+    console.log(e.oldValue);        // old value
+    console.log(e.newValue);        // new value
+    console.log(e.url)              // the URL of the document for which an entry ...
+                                    // ... was changed
+    console.log(e.storageArea);     // the storage object that was changed
+  });  
 })();

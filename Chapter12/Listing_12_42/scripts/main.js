@@ -55,7 +55,7 @@ function init() {
     }
     document.getElementById('abort-file-reading').addEventListener('click', abortRead, false);
   } else {
-    alert('File API nicht vollständig durch den Browser unterstützt');
+    alert('File API not supported by this browser');
   }
 }
 document.addEventListener('DOMContentLoaded', init);
