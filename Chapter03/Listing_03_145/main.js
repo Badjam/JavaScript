@@ -7,7 +7,7 @@ const createUser = (username, email, password) =>
     password: password
   }
 );
-// ... ist das Gleiche wie ...
+// ... is the same as ...
 function createUser(username, email, password) {
   const user = {
     username: username,

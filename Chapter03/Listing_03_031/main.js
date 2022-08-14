@@ -1,7 +1,7 @@
 'use strict';
-const shoppingCart = [ // Beginn der Array-Definition
-  'Plattenspieler', // erster Eintrag
-  'Lautsprecher', // zweiter Eintrag
-  'Vorverstärker', // dritter Eintrag
-  'Lautsprecherkabel' // vierter Eintrag
-]; // Ende der Array-Definition
+const shoppingCart = [    // start of array definition
+  'Record player',        // first entry
+  'Loudspeaker',         // second entry
+  'Preamplifier',         // third entry
+  'Loudspeaker cables'    // fourth entry
+];                        // end of array definition

@@ -1,5 +1,5 @@
 'use strict';
 let name;
-console.log(name); // Ausgabe: undefined
+console.log(name); // Output: undefined
 name = 'John Doe';
-console.log(name); // Ausgabe: John Doe
+console.log(name); // Output: John Doe

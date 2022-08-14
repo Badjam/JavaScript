@@ -1,7 +1,7 @@
 'use strict';
 const shoppingCart = [
-  'Plattenspieler',
-  'Lautsprecher',
-  'Vorverstärker',
-  'Lautsprecherkabel'
+  'Record player', 
+  'Loudspeaker', 
+  'Preamplifier', 
+  'Loudspeaker cables'
 ];

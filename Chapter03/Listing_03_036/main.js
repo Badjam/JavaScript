@@ -1,23 +1,23 @@
 'use strict';
-const shoppingCart = [ // Beginn des äußeren Arrays
-  [ // erster Eintrag
-    'Plattenspieler', // erstes Element im ersten Array
-    200, // zweites Element im ersten Array
-    1 // drittes Element im ersten Array
+const shoppingCart = [       // start of outer array
+  [                          // first entry
+    'Record player',         // first element in the first array
+    200,                     // second element in the first array
+    1                        // third element in the first array
   ],
-  [ // zweiter Eintrag
-    'Lautsprecher', // erstes Element im zweiten Array
-    400, // zweites Element im zweiten Array
-    2 // drittes Element im zweiten Array
+  [                          // second entry
+    'Loudspeaker',           // first element in the second array
+    400,                     // second element in the second array
+    2                        // third element in the second array
   ],
-  [ // dritter Eintrag
-    'Vorverstärker', // erstes Element im dritten Array
-    80, // zweites Element im dritten Array
-    1 // drittes Element im dritten Array
+  [                          // third entry
+    'Preamplifier',          // first element in the third array
+    80,                      // second element in the third array
+    1                        // third element in the third array
   ],
-  [ // vierter Eintrag
-    'Lautsprecherkabel', // erstes Element im vierten Array
-    20, // zweites Element im vierten Array
-    2 // drittes Element im vierten Array
+  [                          // fourth entry
+    'Loudspeaker cables',    // first element in the fourth array
+    20,                      // second element in the fourth array
+    2                        // third element in the fourth array
   ]
-]; // Ende des äußeren Arrays
+];                           // end of outer array

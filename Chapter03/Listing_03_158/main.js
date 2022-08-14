@@ -1,6 +1,6 @@
 'use strict';
 try {
-// Code ausführen, der potenziell Fehler produziert
+    // Execute code that potentially produces errors
 } catch (error) {
-// Behandeln des Fehlers
+    // Handle the error
 }

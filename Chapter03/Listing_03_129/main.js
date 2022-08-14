@@ -6,6 +6,6 @@ function sum(numbers) {
   }
   console.log(result);
 }
-sum([2,3,4,5]);               // Ausgabe: 14
-sum([2,3,4,5,6,7,8,9]);       // Ausgabe: 44
-sum([2,3,4,5,6,7,8,9,10,11]); // Ausgabe: 65
+sum([2,3,4,5]);                // Output: 14
+sum([2,3,4,5,6,7,8,9]);        // Output: 44
+sum([2,3,4,5,6,7,8,9,10,11]);  // Output: 65

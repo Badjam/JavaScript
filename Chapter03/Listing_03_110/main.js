@@ -1,5 +1,5 @@
 'use strict';
-showMessage(); // Aufruf nicht möglich, diese Anweisung produziert einen Fehler.
-const showMessage = function() {
-  console.log('Herzlich willkommen');
+showMessage();  // Calling not possible, this statement produces an error.	
+const showMessage = function() {	
+  console.log('Welcome');	
 }

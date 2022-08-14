@@ -1,8 +1,8 @@
 'use strict';
-// äußere Schleife
+// outer loop
 for (let i = 1; i < 11; i++) {
-  // innere Schleife
+  // inner loop
   for (let j = 1; j < 11; j++) {
-    console.log(`i hat den Wert "${i}", j hat den Wert "${j}"`);
+    console.log(`i has the value "${i}", j has the value "${j}"`);
   }
 }

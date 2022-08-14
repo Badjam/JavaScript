@@ -1,13 +1,13 @@
 'use strict';
 const name = 'John Doe';
 const emptyString = '';
-console.log(!name); // Ausgabe: false
-console.log(!emptyString); // Ausgabe: true
+console.log(!name);           // Output: false
+console.log(!emptyString);    // Output: true
 const amount = 0;
 const age = 25;
-console.log(!amount); // Ausgabe: true
-console.log(!age); // Ausgabe: false
-console.log(!max); // Ausgabe: false
-console.log(!null); // Ausgabe: true
-console.log(!NaN); // Ausgabe: true
-console.log(!undefined); // Ausgabe: true
+console.log(!amount);         // Output: true
+console.log(!age);            // Output: false
+console.log(!john);           // Output: false
+console.log(!null);           // Output: true
+console.log(!NaN);            // Output: true
+console.log(!undefined);      // Output: true

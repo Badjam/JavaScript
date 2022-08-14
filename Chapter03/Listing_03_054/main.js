@@ -1,21 +1,26 @@
 'use strict';
-const max = {
-  firstName: 'Max',
-  lastName: 'Mustermann',
+const john = {
+  firstName: 'John',
+  lastName: 'Doe',
   contact: {
-    email: 'max.mustermann@javascripthandbuch.de'
+    email: 'john.doe@javascripthandbuch.com'
   }
 };
-
-const moritz = {
-  firstName: 'Moritz',
-  lastName: 'Mustermann',
+ 
+const james = {
+  firstName: 'James',
+  lastName: 'Doe',
 };
-
-if (max.contact && max.contact.email) {
-  console.log(max.contact.email);
+ 
+if (john.contact && john.contact.email) {
+  console.log(john.contact.email);
 }
-
-if (moritz.contact && moritz.contact.email) {
-  console.log(moritz.contact.email);
+// Output: "john.doe@javascripthandbuch.com"
+ 
+// Runtime error!
+// console.log(james.contact.email);
+ 
+if (james.contact && james.contact.email) {
+  console.log(james.contact.email);
 }
+// No output

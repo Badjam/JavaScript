@@ -1,13 +1,14 @@
 'use strict';
 function printPersonInformation(firstName, lastName, age) {
   if(firstName !== undefined) {
-    console.log(`Vorname: ${firstName}`);
+    console.log(`First name: ${firstName}`);
   }
   if(lastName !== undefined) {
-    console.log(`Nachname: ${lastName}`);
+    console.log(`Last name: ${lastName}`);
   }
   if(age !== undefined) {
-    console.log(`Alter: ${age}`);
+    console.log(`Age: ${age}`);
   }
 }
-printPersonInformation('Max', 'Mustermann', 44, 1.80);
+
+printPersonInformation('John', 'Doe', 44, 1.80);

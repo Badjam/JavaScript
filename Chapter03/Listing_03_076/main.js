@@ -1,17 +1,17 @@
 'use strict';
 switch(expression) {
   case value1:
-// Anweisungen
+    // Statements
     break;
   case value2:
-// Anweisungen
+    // Statements
     break;
   case value3:
-// Anweisungen
+    // Statements
     break;
   case value4:
-// Anweisungen
+    // Statements
     break;
   default:
-// Anweisungen
+    // Statements
 }

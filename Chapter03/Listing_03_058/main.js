@@ -1,17 +1,17 @@
 'use strict';
-const moritz = {
-  firstName: 'Moritz',
+const james = {
+  firstName: 'James',
 };
-moritz.firstName ||= 'Max';
-moritz.lastName ||= 'Mustermann';
-console.log(moritz);
-// { firstName: 'Moritz', lastName: 'Mustermann' }
+james.firstName ||= 'John';
+james.lastName ||= 'Doe';
+console.log(james);
+// { firstName: 'James', lastName: 'Doe' }
 
-// Vor ES2021 war Folgendes notwendig:
+// Prior to ES2021, the following was required:
 const peter = {
-  firstName: 'Peter',
+  firstName: 'Peter'
 };
-peter.firstName || (peter.firstName = 'Max');
-peter.lastName || (peter.lastName = 'Mustermann');
+peter.firstName || (peter.firstName = 'John');
+peter.lastName || (peter.lastName = 'Doe');
 console.log(peter);
-// { firstName: 'Peter', lastName: 'Mustermann' }
+// { firstName: 'Peter', lastName: 'Doe' }

@@ -1,8 +1,8 @@
 'use strict';
 for (
-  Initialisierung; // wird vor Ausführen der Schleife ausgeführt
-  Bedingung; // wird vor Ausführen einer Iteration überprüft
-  Inkrementierungsausdruck // wird am Ende einer Iteration ausgeführt
+  Initialization;         // is executed before the loop is executed
+  Condition;              // is checked before executing an iteration
+  Increment expression    // executed at the end of an iteration
 ) {
-  Schleifenkörper // wird in jeder Iteration einmal ausgeführt
+  Loop body               // is executed once in each iteration
 }

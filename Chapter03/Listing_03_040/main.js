@@ -3,10 +3,10 @@ const dog = {
   name: 'Bello'
 }
 const person = {
-  firstName: 'Max',
-  lastName: 'Mustermann',
+  firstName: 'John', 
+  lastName: 'Doe', 
   pet: dog
 }
-console.log(person.pet); // Ausgabe: Object {name: "Bello"}
+console.log(person.pet);  // Output: Object {name: "Bello"}
 person.pet = null;
-console.log(person.pet); // Ausgabe: null
+console.log(person.pet);  // Output: null

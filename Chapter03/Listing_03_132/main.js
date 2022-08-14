@@ -1,5 +1,5 @@
 'use strict';
 function sum(x, y) {
-  const result = x + y; // Addition der zwei übergebenen Parameter
-  return result;      // Rückgabe des Ergebnisses
+  const result = x + y;  // Add the two passed parameters
+  return result;         // Return result
 }

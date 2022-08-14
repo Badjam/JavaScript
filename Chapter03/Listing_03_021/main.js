@@ -1,7 +1,7 @@
 'use strict';
-const message = 'Hallo\nHerr\nMustermann';
+const message = 'Hello\nMr.\nDoe';
 console.log(message);
-// Ausgabe:
-// Hallo
-// Herr
-// Mustermann
+// Output:
+// Hello
+// Mr.
+// Doe

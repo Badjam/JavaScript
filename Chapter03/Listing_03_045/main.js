@@ -1,4 +1,4 @@
 'use strict';
-let message = 'Ihr persönlicher Newsletter,';
+let message = 'Your personal newsletter,';
 message += ' ';
 message += name;

@@ -1,4 +1,4 @@
 'use strict';
-while (Ausdruck) {
-// Anweisung(en)
+while (expression) {
+    // Statement(s)
 }

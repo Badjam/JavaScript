@@ -1,5 +1,5 @@
 'use strict';
-const age = prompt('Geben Sie bitte Ihr Alter ein.');
+const age = prompt('Please enter your age.');
 let isAtLeast18;
 if(age >= 18) {
   isAtLeast18 = true;

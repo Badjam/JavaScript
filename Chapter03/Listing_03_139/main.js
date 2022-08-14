@@ -7,13 +7,11 @@ function createUser(username, email, password) {
   }
   return user;
 }
-const userData1 = ['John Doe', 'max.mustermann@example.com', 'secret'];
-const userData2 = ['James Doe', 'moritz.mustermann@example.com', 'password'];
-const max = createUser(
+const userData1 = ['John Doe', 'john.doe@example.com', 'secret']; 
+const userData2 = ['James Doe', 'james.doe@example.com', 'password'];
+const john = createUser(
   ...userData1
 );
-const moritz = createUser(
+const james = createUser(
   ...userData2
 );
-console.log(max);
-console.log(moritz);

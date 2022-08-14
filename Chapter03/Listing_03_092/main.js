@@ -1,4 +1,4 @@
 'use strict';
 do {
-// Anweisung(en)
-} while (Ausdruck)
+    // Statement(s)
+} while (expression)

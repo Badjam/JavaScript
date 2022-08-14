@@ -1,6 +1,6 @@
 'use strict';
-var name = "globaler Name";
+var name = "global name";
 function getNameGlobal() {
-  return this.name;
+    return this.name;
 }
-console.log(getNameGlobal()); // Ausgabe: globaler Name
+console.log(getNameGlobal()); // Output: global name

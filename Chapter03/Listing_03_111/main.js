@@ -1,5 +1,5 @@
 'use strict';
-showMessage(); // Aufruf möglich
-function showMessage() {
-  console.log('Herzlich willkommen');
+showMessage();  // Calling possible	
+function showMessage() {	
+  console.log('Welcome');	
 }

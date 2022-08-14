@@ -1,4 +1,4 @@
 'use strict';
-const salutation = 'Ihr persönlicher Newsletter,'; // Zeichenkette 1
-const name = 'John Doe'; // Zeichenkette 2
-const message = salutation + ' ' + name; // Konkatenation plus Leerzeichen
+const salutation = 'Your personal newsletter,';  // string 1
+const name = 'John Doe';                         // string 2
+const message = salutation + ' ' + name;         // concatenation plus spaces

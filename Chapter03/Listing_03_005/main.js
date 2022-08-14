@@ -1,3 +1,3 @@
 'use strict';
-let firstName = 'Max';
-let lastName = 'Mustermann';
+let firstName = 'John';
+let lastName = 'Doe';

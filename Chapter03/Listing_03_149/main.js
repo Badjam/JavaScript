@@ -1,8 +1,9 @@
 'use strict';
 const person = {
-  name: 'Max',                  // Objekteigenschaft
+  name: 'John',               // Object property
   getName: function() {
     return this.name;
   }
 }
-console.log(person.getName());  // Ausgabe: Max
+
+console.log(person.getName()); // Output: John

@@ -5,33 +5,33 @@ const someNumber = 0;
 const someText = '';
 const someBoolean = false;
 
-// Linker Operand null --> Rückgabe des rechten Operanden
+// Left operand is null --> return right operand
 const a = someNullValue ?? 'Default value for null';
 console.log(a);
-// Ausgabe: Default value for null
+// Output: Default value for null
 
-// Linker Operand undefined --> Rückgabe des rechten Operanden
+// Left operand is undefined --> return right operand
 const b = someUndefinedValue ?? 'Default value for undefined';
 console.log(b);
-// Ausgabe: Default value for undefined
+// Output: Default value for undefined
 
-// Linker Operand 0 ("falsy") --> Rückgabe des linken Operanden
+// Left operand is 0 ("falsy") --> return left operand
 const c = someNumber ?? 80;
 console.log(c);
-// Ausgabe: 0
+// Output: 0
 
-// Linker Operand leerer String ("falsy") --> Rückgabe des linken Operanden
+// Left operand is an empty string ("falsy") --> return left operand
 const d = someText ?? 'Default value for empty string';
 console.log(d);
-// Ausgabe: ''
+// Output: ''
 
-// Linker Operand false --> Rückgabe des linken Operanden
+// Left operand is false --> return left operand
 const e = someBoolean ?? true;
 console.log(e);
-// Ausgabe: false
+// Output: false
 
 const x = 4711;
-
+ 
 console.log({} ?? x);                // {}
 console.log(false ?? x);             // false
 console.log(x ?? null);              // 4711

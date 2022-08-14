@@ -1,14 +1,14 @@
 'use strict';
-const message = 'Sehr geehrter Herr Mustermann, \n\ngerne übersenden wir ' +
-  'Ihnen die geforderten Unterlagen zur Prüfung zurück. \n\n' +
-  'Mit freundlichen Grüßen, \nFrau Musterfrau, \nMusterfirma';
+const message = 'Dear Mr. Doe, \n\nWe are happy to return ' + 
+              'the requested documents to you for review. \n\n' + 
+              'Yours sincerely, \nMrs. Smith, \nSample Company';
 console.log(message);
-// Ausgabe:
-//
-// Sehr geehrter Herr Mustermann,
-//
-// gerne übersenden wir Ihnen die geforderten Unterlagen zur Prüfung zurück.
-//
-// Mit freundlichen Grüßen,
-// Frau Musterfrau,
-// Musterfirma
+// Output: 
+// 
+// Dear Mr. Doe, 
+// 
+// We are happy to return the requested documents to you for review. 
+// 
+// Yours sincerely, 
+// Mrs. Smith, 
+// Sample Company

@@ -1,5 +1,5 @@
 'use strict';
-const shoppingCartItem1 = 'Plattenspieler'; // erster Eintrag
-const shoppingCartItem2 = 'Lautsprecher'; // zweiter Eintrag
-const shoppingCartItem3 = 'Vorverstärker'; // dritter Eintrag
-const shoppingCartItem4 = 'Lautsprecherkabel'; // vierter Eintrag
+const shoppingCartItem1 = 'Record player';       // first item
+const shoppingCartItem2 = 'Loudspeaker';         // second item
+const shoppingCartItem3 = 'Preamplifier';        // third item
+const shoppingCartItem4 = 'Loudspeaker cables';  // fourth item

@@ -1,7 +1,7 @@
 'use strict';
-// const 2ndName = 'Moritz'; // ungültig, da mit Zahl beginnend
-// const first%Name = 'Max'; // ungültig, da Sonderzeichen enthaltend
-// const first-name = 'Max'; // ungültig, da Bindestrich enthaltend
-const first_name = 'Max'; // gültig
-const _firstName = 'Max'; // gültig
-const $firstName = 'Max'; // gültig
+// const 2ndName = 'James';   // invalid because it starts with a number
+// const first%Name = 'John'; // invalid because it contains special characters
+// const first-name = 'John'; // invalid because it contains a hyphen
+const first_name = 'John'; // valid
+const _firstName = 'John'; // valid
+const $firstName = 'John'; // valid

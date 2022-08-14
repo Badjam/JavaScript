@@ -1,6 +1,6 @@
 'use strict';
 function showMessage() {
-  console.log('Herzlich willkommen');
+  console.log('Welcome');
 }
-showMessage(); // Ausgabe: "Herzlich willkommen"
-showMessage(); // Ausgabe: "Herzlich willkommen"
+showMessage();  // Output: "Welcome"
+showMessage();  // Output: "Welcome"

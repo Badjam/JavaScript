@@ -1,7 +1,7 @@
 'use strict';
-// Wenig aussagekräftige Variablennamen
-const fn = 'Max ';
-const ln = 'Mustermann ';
-// Aussagekräftige Variablennamen
-const firstName = 'Max ';
-const lastName = 'Mustermann ';
+// not very meaningful variable names
+const fn = 'John ';
+const ln = 'Doe ';
+// meaningful variable names
+const firstName = 'John ';
+const lastName = 'Doe ';

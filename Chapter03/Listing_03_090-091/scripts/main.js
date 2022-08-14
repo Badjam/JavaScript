@@ -1,17 +1,17 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', () => {
-  const sourceList = document.getElementById('source'); // die Quellliste
-  const targetList = document.getElementById('target'); // die Zielliste
-  const copyButton = document.getElementById('move'); // die Schaltfläche zum
-  // Verschieben
-  copyButton.addEventListener('click', function() { // Bei Klick auf die
-  // Schaltfläche:
-    while(sourceList.hasChildNodes()) { // Solange noch Einträge
-  // in der Quellliste sind,
-      const item = sourceList.removeChild( // wird der erste Eintrag
-        sourceList.firstChild); // aus dieser Liste entfernt
-      targetList.appendChild(item); // und zur Zielliste
-  // hinzugefügt.
+  const sourceList = document.getElementById('source');  // the source list
+  const targetList = document.getElementById('target');  // the target list
+  const copyButton = document.getElementById('move');    // the Move ...
+                                                         // ... button
+  copyButton.addEventListener('click', function() {      // When clicking the ...
+                                                         // ... button:
+    while(sourceList.hasChildNodes()) {                  // While there are items ...
+                                                         // ... in the source list, ...
+      const item = sourceList.removeChild(               // ... the first item is ...
+        sourceList.firstChild);                          // ... removed from this list ...
+      targetList.appendChild(item);                      // ... and added to the ...
+                                                         // ... target list.
     }
-  });
+  });  
 });

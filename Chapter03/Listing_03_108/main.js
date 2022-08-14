@@ -1,5 +1,5 @@
 'use strict';
 const showMessage = function() {
-  console.log('Herzlich willkommen');
+  console.log('Welcome');
 }
 showMessage();

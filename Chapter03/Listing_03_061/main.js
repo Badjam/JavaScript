@@ -1,4 +1,4 @@
-'use strict';
-const condition;
-if(condition)
-  // Programmcode, der ausgeführt werden soll, falls Bedingung erfüllt ist
+const condition = true;
+if(condition) 
+  // Program code to be executed if condition is met
+  console.log('executed');

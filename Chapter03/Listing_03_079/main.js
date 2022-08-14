@@ -1,21 +1,21 @@
 'use strict';
 const testResultElement = document.getElementById('testResult');
-const testResult = 0; // Testergebnis, würde normalerweise berechnet
-let icon = null; // Variable, die den Bildnamen enthalten wird
-switch(testResult) { // Prüfe das Testergebnis
-  case 0: // Hat dieses den Wert 0,
-    icon = 'pass.png'; // wird der Bildname "pass.png" zugewiesen,
-// aber nicht abgebrochen.
-  case 1: // Hat das Testergebnis den Wert 1,
-    icon = 'info.png'; // wird der Bildname "info.png" zugewiesen,
-// aber nicht abgebrochen.
-  case 2: // Hat das Testergebnis den Wert 2,
-    icon = 'warning.png'; // wird der Bildname "warning.png" zugewiesen,
-// aber nicht abgebrochen.
-  case 3: // Hat das Testergebnis den Wert 3,
-    icon = 'error.png'; // wird der Bildname "error.png" zugewiesen,
-// aber nicht abgebrochen.
-  default: // Für alle anderen Werte (und alle obigen Fälle)
-    icon = 'unknown.png'; // wird der Bildname "unknown.png" verwendet.
+const testResult = 0;        // Test result, would normally be calculated
+let icon = null;             // Variable that will contain the image name
+switch(testResult) {         // Check the test result.
+  case 0:                    // If this has a value of 0, ...
+    icon = 'pass.png';       // ... the image name "pass.png" is assigned, ...
+                             // ... but the process is not aborted.
+  case 1:                    // If the test result has a value of 1, ...
+    icon = 'info.png';       // ... the image name "info.png" is assigned.
+                             // ... but the process is not aborted.
+  case 2:                    // If the test result has a value of 2, ...
+    icon = 'warning.png';    // ... the image name "warning.png" is assigned, ...
+                             // ... but the process is not aborted.
+  case 3:                    // If the test result has a value of 3, ...
+    icon = 'error.png';      // ... the image name "error.png" is assigned, ...
+                             // ... but the process is not aborted.
+default:                     // For all other values (and all cases above) ...
+    icon = 'unknown.png';    // ... the image name "unknown.png" is used.
 }
 testResultElement.src = 'img/' + icon;

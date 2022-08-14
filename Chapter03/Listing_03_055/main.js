@@ -1,23 +1,29 @@
 'use strict';
-const max = {
-  firstName: 'Max',
-  lastName: 'Mustermann',
+const john = {
+  firstName: 'John',
+  lastName: 'Doe',
   contact: {
-    email: 'max.mustermann@javascripthandbuch.de'
+    email: 'john.doe@javascripthandbuch.com'
   }
 };
-
-const moritz = {
-  firstName: 'Moritz',
-  lastName: 'Mustermann',
+ 
+const james = {
+  firstName: 'James',
+  lastName: 'Doe',
 };
 
-// Zugriff auf geschachtelte Eigenschaft über 
-// Optional Chaining Operator:
-console.log(max.contact?.email);
-console.log(moritz.contact?.email); // Ausgabe: undefined
+// Access to nested property via 
+// optional chaining operator:
+console.log(john.contact?.email);
+// Output: "john.doe@javascripthandbuch.com"
+ 
+console.log(james.contact?.email);
+// Output: undefined
 
-// Alternativ auch möglich: Verwendung des
-// Operators auf mehreren Hierarchieebenen:
-console.log(max?.contact?.email);
-console.log(moritz?.contact?.email); // Ausgabe: undefined
+// Alternative possibility: Using the
+// operator on multiple hierarchy levels:
+console.log(john?.contact?.email);
+// Output: "john.doe@javascripthandbuch.com"
+ 
+console.log(james?.contact?.email);
+// Output: undefined

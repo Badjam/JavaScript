@@ -5,6 +5,6 @@ function divide(x, y) {
 function normalize(x) {
   return x < 0 ? 1 : x;
 }
-console.log(divide(5, -1)); // Ausgabe: 5
-console.log(divide(5, -2)); // Ausgabe: 5
-console.log(divide(5, 0));  // Ausgabe: Infinity
+console.log(divide(5, -1));  // Output: 5
+console.log(divide(5, -2));  // Output: 5
+console.log(divide(5, 0));   // Output: Infinity

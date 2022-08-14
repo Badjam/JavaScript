@@ -1,6 +1,6 @@
 'use strict';
-let i = 1; // Initialisierung
+let i = 1;         // Initialization
 do {
-  console.log(i); // Anweisung
-  i++; // Inkrementierung
-} while (i < 11) // Bedingung
+  console.log(i);  // Statement
+  i++;             // Increment
+} while (i < 11)   // Condition

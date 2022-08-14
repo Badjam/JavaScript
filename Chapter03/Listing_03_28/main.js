@@ -1,16 +1,18 @@
 'use strict';
-const message = `Sehr geehrter Herr Mustermann,
-gerne übersenden wir Ihnen die geforderten Unterlagen zur Prüfung zurück.
-Mit freundlichen Grüßen,
-Frau Musterfrau,
-Musterfirma`;
+const message = `Dear Mr. Doe, 
+
+we are happy to return the requested documents to you for review.
+
+Yours sincerely, 
+Mrs. Smith, 
+Sample Company`;
 console.log(message);
-// Ausgabe:
-//
-// Sehr geehrter Herr Mustermann,
-//
-// gerne übersenden wir Ihnen die geforderten Unterlagen zur Prüfung zurück.
-//
-// Mit freundlichen Grüßen,
-// Frau Musterfrau,
-// Musterfirma
+// Output: 
+// 
+// Dear Mr. Doe, 
+// 
+// We are happy to return the requested documents to you for review. 
+// 
+// Yours sincerely, 
+// Mrs. Smith, 
+// Sample Company

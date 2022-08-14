@@ -1,6 +1,6 @@
 'use strict';
 function showMessage() {
-  console.log('Hallo Welt');
+  console.log('Hello world');
 }
-showMessage(); // Ausgabe: "Hallo Welt"
-showMessage(); // Ausgabe: "Hallo Welt"
+showMessage();  // Output: "Hello world"
+showMessage();  // Output: "Hello world"
