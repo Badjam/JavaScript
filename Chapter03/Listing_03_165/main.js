@@ -1,24 +1,25 @@
 'use strict';
 try {
-  console.log(checkAge(22));                // true
+  console.log(checkAge(22));         // true
 } catch(error) {
-  console.log(error);                       // Wird nicht aufgerufen
+  console.log(error);                // will not be called
 }
 try {
-  console.log(checkAge("John Doe"));  // keine Ausgabe
+  console.log(checkAge("John Doe")); // no output
 } catch(error) {
-  console.log(error);                       // TypeError: Alter muss eine Zahl sein
+  console.log(error);                // TypeError: Age must be a number
 }
 try {
-  console.log(checkAge(-22));               // keine Ausgabe
+  console.log(checkAge(-22));        // no output
 } catch(error) {
-  console.log(error);                       // RangeError: Alter darf nicht negativ sein
+  console.log(error);                // RangeError: Age must not be negative
 }
+
 function checkAge(age) {
   if(isNaN(parseFloat(age))) {
-    throw new TypeError('Alter muss eine Zahl sein.');
+    throw new TypeError('Age must be a number.');
   } else if (age < 0) {
-    throw new RangeError('Alter darf nicht negativ sein.');
+    throw new RangeError('Age must not be negative.');
   }
-  return true;                            // Im Fehlerfall wird diese Anweisung nicht mehr ausgeführt.
+  return true;  // In case of error, this statement will no longer be executed.
 }

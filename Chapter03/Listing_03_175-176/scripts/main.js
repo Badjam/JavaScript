@@ -11,4 +11,5 @@ function findDuplicates() {
     }
   }
 }
+
 document.addEventListener('DOMContentLoaded', findDuplicates);

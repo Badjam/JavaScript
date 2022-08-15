@@ -1,23 +1,25 @@
 'use strict';
 function openDatabaseConnection() {
-  console.log('Datenbankverbindung geöffnet');
+  console.log('Database connection open');
 }
+
 function closeDatabaseConnection() {
-  console.log('Datenbankverbindung geschlossen');
+  console.log('Database connection closed');
 }
+
 function getUsersByName(name) {
   if(typeof name !== 'string') {
-    throw new TypeError('Zeichenkette erwartet');
+    throw new TypeError('String expected');
   }
-  /* ... */
+  /* ... */ 
 }
+
 function accessDatabase() {
-  openDatabaseConnection();   // 'Datenbankverbindung geöffnet'
+  openDatabaseConnection();    // 'Database connection open'
   try {
     getUsersByName(22);
   } catch(error) {
-    console.error(error);     // TypeError: Zeichenkette erwartet
+    console.error(error);      // TypeError: String expected
   }
-  closeDatabaseConnection();  // 'Datenbankverbindung geschlossen'
+  closeDatabaseConnection();   // 'Database connection closed'
 }
-accessDatabase();

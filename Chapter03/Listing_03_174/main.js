@@ -1,16 +1,16 @@
 'use strict';
-/* Diese Funktion addiert zwei positive Zahlen
- und liefert das Ergebnis zurück. */
+/* This function adds two positive numbers 
+and returns the result. */
 function add(x, y) {
-  let result = 0; // Variable für das Ergebnis
-  // Wenn eine der beiden Zahlen kleiner 0 ist ...
+  let result = 0;         // Variable for the result
+  // If one of the two numbers is less than 0 ...
   if(x < 0 || y < 0) {
-    // ... wird ein Fehler zurückgegeben ...
-    throw new Error('Zahlen müssen größer gleich 0 sein.');
+    // ... an error is returned ...
+    throw new Error('Numbers must be greater than or equal to 0.');
   } else {
-    // ... andernfalls werden die beiden Zahlen addiert ...
+    // ... otherwise the two numbers are added ...
     result = x + y;
   }
-  // ... und das Ergebnis zurückgegeben.
+  // ... and the result is returned.
   return result;
 }

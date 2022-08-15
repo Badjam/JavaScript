@@ -1,9 +1,10 @@
 'use strict';
-console.log(checkAge(22));  // true
-console.log(checkAge(-22)); // Error: Alter darf nicht negativ sein
+console.log(checkAge(22));   // true
+console.log(checkAge(-22));  // Error: Age must not be negative
 function checkAge(age) {
   if (age < 0) {
-    throw new Error('Alter darf nicht negativ sein.');
+    throw new Error('Age must not be negative.');
   }
-  return true;              // Im Fehlerfall wird diese Anweisung nicht mehr ausgeführt.
+  return true;  // In case of error, this statement will no longer be executed.
 }
+

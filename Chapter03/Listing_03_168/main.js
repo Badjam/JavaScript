@@ -1,9 +1,9 @@
 'use strict';
 try {
-// Code ausführen, der potenziell Fehler produziert
+    // Execute code that potentially produces errors
 } catch (error) {
-// Behandeln des Fehlers
+    // Handle the error
 } finally {
-// Alles, was hier steht, wird immer ausgeführt, unabhängig davon,
-// ob ein Fehler aufgetreten ist oder nicht.
+    // Everything that is written here will always be executed, regardless of 
+    // whether an error has occurred or not.
 }
