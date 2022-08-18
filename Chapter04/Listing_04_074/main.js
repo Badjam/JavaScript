@@ -1,14 +1,14 @@
 'use strict';
 const todoList = [
-  'Bad putzen',
-  'Einkaufen',
-  'Aufräumen',
-  'Rasen mähen'
+  'Clean bathroom',
+  'Go shopping',
+  'Tidy up',
+  'Mow lawn'
 ];
 todoList.copyWithin(
-  0, // Zielstartposition, an die die Elemente kopiert werden
-  2, // Quellenstartposition, ab der kopiert wird
-  4   // Quellenendposition, bis zu der kopiert wird
+  0,  // target start position to which the elements will be copied
+  2,  // source start position from which the elements are copied
+  4   // source end position up to which the elements are copied
 );
 console.log(todoList);
-// ["Aufräumen", "Rasen mähen", "Aufräumen", "Rasen mähen"]
+// ["Tidy up", "Mow lawn", "Tidy up", "Mow lawn"]

@@ -1,21 +1,21 @@
 'use strict';
-const max = {
-  firstName: 'Max'
+const john = {
+  firstName: 'John'
 }
-const maxMustermann = Object.create(max, {
+const johnDoe = Object.create(john, {
   lastName: {
-    value: 'Mustermann',
+    value: 'Doe',
     enumerable: true
   }
 });
-console.log(max.firstName);           // Max
-console.log(max.lastName);            // undefined
-console.log(maxMustermann.firstName); // Max
-console.log(maxMustermann.lastName);  // Mustermann
-// Ausgabe: lastName, firstName
-for(let i in maxMustermann) {
+console.log(john.firstName);      // John
+console.log(john.lastName);       // undefined
+console.log(johnDoe.firstName);   // John
+console.log(johnDoe.lastName);    // Doe
+// Output: lastName, firstName
+for(let i in johnDoe) {
   console.log(i);
 }
-const properties = Object.keys(maxMustermann);
-// Ausgabe: ["lastName"]
+const properties = Object.keys(johnDoe);
+// Output: ["lastName"]
 console.log(properties);

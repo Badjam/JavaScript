@@ -2,16 +2,16 @@
 const item = {};
 Object.defineProperties(item, {
   name: {
-    value: 'Schrödinger programmiert Java'
+    value: 'JavaScript: The Comprehensive Guide'
   },
   price: {
-    value: 44.90
+    value: 59.95
   },
   author: {
     value: 'Philip Ackermann'
   },
   isbn: {
-    value: '978-3-8362-7272-8'
+    value: '978-1-4932-2286-5'
   },
   printDescription: {
     value: function() {
@@ -19,7 +19,7 @@ Object.defineProperties(item, {
     }
   }
 });
-console.log(item.name);   // "Schrödinger programmiert Java"
+console.log(item.name);   // "JavaScript: The Comprehensive Guide"
 console.log(item.price);  // 44.9
 console.log(item.author); // "Philip Ackermann"
-console.log(item.isbn);   // "978-3-8362-7272-8"
+console.log(item.isbn);   // "978-1-4932-2286-5"

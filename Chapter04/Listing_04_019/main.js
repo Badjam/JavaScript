@@ -1,13 +1,13 @@
 'use strict';
 const item = Object.create(Object.prototype, {
   name: {
-    value: 'Schrödinger programmiert Java',
+    value: 'JavaScript: The Comprehensive Guide',
     writable: false,
     configurable: true,
     enumerable: true
   },
   price: {
-    value: 44.90,
+    value: 59.95,
     writable: true,
     configurable: true,
     enumerable: true
@@ -19,11 +19,12 @@ const item = Object.create(Object.prototype, {
     enumerable: true
   },
   isbn: {
-    value: '978-3-8362-7272-8',
+    value: '978-1-4932-2286-5',
     writable: false,
     configurable: true,
-    enumerable: false // Die Eigenschaft "isbn" wird bei Iteration
-// nicht ausgegeben.
+    enumerable: false     // During iteration, the "isbn" property is 
+                          // not output.
+
   },
   printDescription: {
     value: function() {
@@ -32,11 +33,13 @@ const item = Object.create(Object.prototype, {
   }
 });
 for(let property in item) {
-  console.log(property); // Ausgabe: "name", "price", "author"
+  console.log(property);    // Output: "name", "price", "author"
 }
-item.name = 'Cooles neues Java-Buch';
-console.log(item.name);   // "Schrödinger programmiert Java", da die
-                          // Eigenschaft "name" nicht "writeable" ist.
+
+item.name = 'Cool new Java book';
+console.log(item.name);     // "JavaScript: The Comprehensive Guide", because the 
+                            // "name" property is not "writeable".
+
 item.price = 54.95;
-console.log(item.price);  // "54.95", da für die Eigenschaft "price"
-                          // das Attribut "writable" den Wert "true" hat.
+console.log(item.price);    // "54.95", because for the "price" property,
+                            // the "writable" attribute has a value of "true".

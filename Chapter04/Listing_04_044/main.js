@@ -1,19 +1,19 @@
 'use strict';
-const max = {
-  firstName: 'Max',
-  lastName: 'Mustermann'
+const john = {
+  firstName: 'John',
+  lastName: 'Doe'
 }
-console.log(Object.isExtensible(max));  // true
-max.age = 44;                           // neue Eigenschaft definieren
-console.log(max.age);                   // 44
-Object.preventExtensions(max);          // Erweiterungen verhindern
-console.log(Object.isExtensible(max));  // false
-max.firstName = 'Moritz';               // Erlaubt: bestehende Eigenschaft ändern
-console.log(max.firstName);             // "Moritz"
-console.log(Object.getOwnPropertyDescriptor(max, 'firstName').enumerable); // true
-Object.defineProperty(max, 'firstName', { // Erlaubt: Eigenschaftsattribute ändern
-  enumerable: false
+console.log(Object.isExtensible(john));    // true
+john.age = 44;                             // define new property
+console.log(john.age);                     // 44
+Object.preventExtensions(john);            // prevent extensions
+console.log(Object.isExtensible(john));    // false
+john.firstName = 'James';                  // permitted: change existing property
+console.log(john.firstName);               // "James"
+console.log(Object.getOwnPropertyDescriptor(john, 'firstName').enumerable);  // true
+Object.defineProperty(john, 'firstName', { // permitted: change property attributes
+    enumerable: false
 });
-console.log(Object.getOwnPropertyDescriptor(max, 'firstName').enumerable); // false
-max.weight = 88; // TypeError: Can't add property weight,
-// object is not extensible
+console.log(Object.getOwnPropertyDescriptor(john, 'firstName').enumerable);  // false
+john.weight = 88;                          // TypeError: Can't add property weight, 
+                                           // object is not extensible

@@ -1,2 +1,2 @@
 'use strict';
-const names = new Array('Max', 'Moritz', 'Peter');
+const names = new Array('John', 'James', 'Peter');

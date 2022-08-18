@@ -1,3 +1,3 @@
 'use strict';
-const names = new Array('Max', 'Moritz', 'Peter');
-console.log(names.length); // Ausgabe: 3
+const names = new Array('John', 'James', 'Peter');
+console.log(names.length); // Output: 3

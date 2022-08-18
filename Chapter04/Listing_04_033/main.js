@@ -1,9 +1,9 @@
 'use strict';
 const item = {};
-item['name'] = 'Schrödinger programmiert Java';
-item['price'] = 44.90;
+item['name'] = 'JavaScript: The Comprehensive Guide';
+item['price'] = 59.95;
 item['author'] = 'Philip Ackermann';
-item['isbn'] = '978-3-8362-7272-8';
+item['isbn'] = '978-1-4932-2286-5';
 item['printDescription'] = function() {
   console.log(`${this.author}: ${this.name}`);
 }

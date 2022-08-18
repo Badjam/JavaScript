@@ -1,19 +1,19 @@
 'use strict';
-const max = {
-  firstName: 'Max',
-  lastName: 'Mustermann'
+const john = {
+  firstName: 'John',
+  lastName: 'Doe'
 }
-console.log(Object.isExtensible(max));  // true
-console.log(Object.isSealed(max));      // false
-max.age = 44;                           // neue Eigenschaft definieren
-console.log(max.age);                   // 44
-Object.seal(max);                       // Objekt versiegeln
-console.log(Object.isExtensible(max));  // false
-console.log(Object.isSealed(max));      // true
-max.firstName = 'Moritz';               // Erlaubt: bestehende Eigenschaft ändern
-console.log(max.firstName);             // "Moritz"
-console.log(Object.getOwnPropertyDescriptor(max, 'firstName').enumerable); // true
-Object.defineProperty(max, 'firstName', { // Uncaught TypeError: Cannot redefine
-// property: firstName
-  enumerable: false
+console.log(Object.isExtensible(john));    // true
+console.log(Object.isSealed(john));        // false
+john.age = 44;                             // define new property
+console.log(john.age);                     // 44
+Object.seal(john);                         // seal object
+console.log(Object.isExtensible(john));    // false
+console.log(Object.isSealed(john));        // true
+john.firstName = 'James';                  // permitted: change existing property
+console.log(john.firstName);               // "James"
+console.log(Object.getOwnPropertyDescriptor(john, 'firstName').enumerable);  // true
+Object.defineProperty(john, 'firstName', { // Uncaught TypeError: Cannot redefine 
+                                           // property: firstName
+    enumerable: false
 });

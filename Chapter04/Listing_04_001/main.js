@@ -1,9 +1,9 @@
 'use strict';
-const max = {
-  firstName: 'Max',
-  lastName: 'Mustermann'
+const john = {
+  firstName: 'John', 
+  lastName: 'Doe'
 }
-const max2 = max;
-max2.firstName = 'Moritz';
-console.log(max2.firstName); // "Moritz"
-console.log(max.firstName);  // "Moritz"
+const john2 = john;
+john2.firstName = 'James';
+console.log(john2.firstName);   // "James"
+console.log(john.firstName);    // "James"

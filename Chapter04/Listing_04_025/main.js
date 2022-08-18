@@ -5,28 +5,30 @@ function Item(name, price, author, isbn) {
   this._author = author;
   this._isbn = isbn;
 }
+
 Item.prototype = {
   set name(newName) {
     if(typeof newName === 'string') {
-      console.log('Neuen Namen setzen');
+      console.log('Set new name');
       this._name = newName;
     } else {
-      throw new TypeError('Name muss eine Zeichenkette sein.')
+      throw new TypeError('Name must be a string.')
     }
   },
   get name() {
-    console.log('Namen zurückgeben');
+    console.log('Return name');
     return this._name;
   }
-  /* Analog für die anderen Eigenschaften. */
+  /* Same for the other properties. */
 };
 const item = new Item(
-  'Schrödinger programmiert Java',
-  44.90,
+  'JavaScript: The Comprehensive Guide', 
+  59.95, 
   'Philip Ackermann',
-  '978-3-8362-7272-8'
+  '978-1-4932-2286-5'
 )
-console.log(item.name); // "Namen zurückgeben"
-// "Schrödinger programmiert Java"
-item.name = 'Schrödinger programmiert Java - Das etwas andere Fachbuch';
-// "Neuen Namen setzen"
+
+console.log(item.name);    // "Return name"
+                           // "JavaScript: The Comprehensive Guide"
+item.name = 'JavaScript: The Comprehensive Guide by Philip Ackermann';
+                           // "Set new name"

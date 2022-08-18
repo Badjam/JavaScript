@@ -1,18 +1,18 @@
 'use strict';
 const contacts = [
   {
-    firstName: 'Max',
-    lastName: 'Mustermann',
-    email: 'max.mustermann@javascripthandbuch.de'
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john.doe@javascripthandbuch.de'
   },
   {
-    firstName: 'Moritz',
-    lastName: 'Mustermann',
-    email: 'moritz.mustermann@javascripthandbuch.de'
+    firstName: 'James',
+    lastName: 'Doe',
+    email: 'james.doe@javascripthandbuch.de'
   },
   {
     firstName: 'Peter',
-    lastName: 'Mustermann',
-    email: 'peter.mustermann@javascripthandbuch.de'
+    lastName: 'Doe',
+    email: 'peter.doe@javascripthandbuch.de'
   }
 ];

@@ -1,21 +1,22 @@
 'use strict';
 const person = {
-  firstName : 'Max',
-  lastName : 'Mustermann',
+  firstName : 'John', 
+  lastName : 'Doe',
   address : {
     postCode : '23456',
-    street : 'Musterstraße 22'
+    street : '22, Sample Street' 
   }
 }
 const {
-  firstName,
-  lastName,
+  firstName, 
+  lastName, 
   address : {
-    postCode,
+    postCode, 
     street
-    }
-  } = person;
-console.log(firstName);   // "Max"
-console.log(lastName);    // "Mustermann"
-console.log(postCode);    // "23456"
-console.log(street);      // "Musterstraße 22"
+  }
+} = person;
+console.log(firstName); // "John"
+console.log(lastName);  // "Doe"
+console.log(postCode);  // "23456"
+console.log(street);    // "22, Sample Street"
+

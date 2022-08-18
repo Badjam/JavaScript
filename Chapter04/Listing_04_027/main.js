@@ -3,22 +3,22 @@ const item = Object.create(Object.prototype, {
   name: {
     set: function(newName) {
       if (typeof newName === 'string') {
-        console.log('Neuen Namen setzen');
+        console.log('Set new name');
         this._name = newName;
       } else {
-        throw new TypeError('Name muss eine Zeichenkette sein.')
+        throw new TypeError('Name must be a string.')
       }
     },
     get: function() {
-        console.log('Namen zurückgeben');
+        console.log('Return name');
         return this._name;
     }
-    /* Analog für die anderen Eigenschaften. */
+    /* Same for the other properties. */
   }
 });
-// "Neuen Namen setzen"
-item.name = 'Schrödinger programmiert Java - Das etwas andere Fachbuch';
-// "Namen zurückgeben"
+// "Set new name"
+item.name = 'JavaScript: The Comprehensive Guide by Philip Ackermann';
+// "Return name"
 console.log(item.name);
-// Ausgabe:
-// "Schrödinger programmiert Java - Das etwas andere Fachbuch"
+// Output:
+// "JavaScript: The Comprehensive Guide by Philip Ackermann"

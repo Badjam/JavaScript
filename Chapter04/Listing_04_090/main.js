@@ -1,32 +1,33 @@
 'use strict';
 const persons = [
   {
-    firstName: 'Max',
-    lastName: 'Mustermann',
+    firstName: 'John', 
+    lastName: 'Doe', 
     contact: {
-      email: 'max.mustermann@javascripthandbuch.de',
+      email: 'john.doe@javascripthandbuch.de', 
       phone: '02345/23456789'
     }
-  },
+  }, 
   {
-    firstName: 'Maxi',
-    lastName: 'Musterfrau',
+    firstName: 'Jane', 
+    lastName: 'Smith', 
     contact: {
-      email: 'maxi.musterfrau@javascripthandbuch.de',
+      email: 'jane.smith@javascripthandbuch.de', 
       phone: '02345/23456789'
     }
   }
 ];
-for (let
-       {
-         firstName: firstName,
-         lastName: lastName,
-         contact: {
-           email: email,
-           phone: phone
-           }
-         } of persons) {
+
+for (let 
+  {
+    firstName: firstName, 
+    lastName: lastName, 
+    contact: { 
+      email: email, 
+      phone: phone 
+    } 
+  } of persons) {
   console.log(`${firstName} ${lastName}`);
-  console.log(`E-Mail: ${email}`);
-  console.log(`Telefon: ${phone}`);
+  console.log(`Email: ${email}`);
+  console.log(`Phone: ${phone}`);
 }

@@ -1,10 +1,10 @@
 'use strict';
-const names = ['Max', 'Moritz', 'Peter'];
+const names = ['John', 'James', 'Peter'];
 const namesString = names.toString();
-console.log(namesString);       // Ausgabe: Max,Moritz,Peter
+console.log(namesString);           // Output: John,James,Peter
 const namesLocaleString = names.toLocaleString();
-console.log(namesLocaleString); // Ausgabe: Max,Moritz,Peter
+console.log(namesLocaleString);     // Output: John,James,Peter
 const namesValue = names.valueOf();
-console.log(namesValue);        // Ausgabe: ["Max", "Moritz", "Peter"]
+console.log(namesValue);            // Output: ["John", "James", "Peter"]
 const namesJoined = names.join('-');
-console.log(namesJoined);       // Ausgabe: Max-Moritz-Peter
+console.log(namesJoined);           // Output: John-James-Peter

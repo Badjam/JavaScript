@@ -1,36 +1,36 @@
 'use strict';
 const todoList = [
-  'Bad putzen',
-  'Einkaufen',
-  'Aufräumen',
-  'Rasen mähen'
+  'Clean bathroom',
+  'Go shopping',
+  'Tidy up',
+  'Mow lawn'
 ];
 todoList.splice(
-  2,                    // Index, ab dem eingefügt werden soll
-  0,                    // Anzahl an zu löschenden ELementen
-  'Garage streichen'    // Element, das hinzugefügt werden soll
+  2,                  // Index from which to insert elements
+  0,                  // Number of elements to be deleted
+  'Paint garage'      // Element to be added
 );
 console.log(todoList);
 // [
-// "Bad putzen",
-// "Einkaufen",
-// "Garage streichen",
-// "Aufräumen",
-// "Rasen mähen"
+//   "Clean bathroom",
+//   "Go shopping",
+//   "Paint garage",
+//   "Tidy up",
+//   "Mow lawn"
 // ]
 todoList.splice(
-  2,                    // Index, ab dem eingefügt werden soll
-  0,                    // Anzahl an zu löschenden ELementen
-  'Rollrasen verlegen', // Elemente, die hinzugefügt ...
-  'Gemüsebeet anlegen'  // ... werden sollen
+  2,                          // Index from which to insert elements
+  0,                          // Number of elements to be deleted
+  'Lay sod',                  // Elements to be ...
+  'Lay out vegetable garden'  // ... added
 );
 console.log(todoList);
 // [
-// "Bad putzen",
-// "Einkaufen",
-// "Rollrasen verlegen",
-// "Gemüsebeet anlegen",
-// "Garage streichen",
-// "Aufräumen",
-// "Rasen mähen"
+//   "Clean bathroom",
+//   "Go shopping",
+//   "Lay sod",
+//   "Lay out vegetable garden",
+//   "Paint garage",
+//   "Tidy up",
+//   "Mow lawn"
 // ]

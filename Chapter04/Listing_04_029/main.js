@@ -1,23 +1,23 @@
 'use strict';
 const item = {
   isbn: '',
-  _name: '',
-  /* Hier die anderen Eigenschaften */
+  _name: '', 
+  /* Here are the other properties. */
   set name(newName) {
     if(typeof newName === 'string') {
-      console.log('Neuen Namen setzen');
+      console.log('Set new name');
       this._name = newName;
     } else {
-      throw new TypeError('Name muss eine Zeichenkette sein.')
+      throw new TypeError('Name must be a string.')
     }
   },
   get name() {
-    console.log('Namen zurückgeben');
+    console.log('Return name');
     return this._name;
   }
-  /* Analog für die anderen Eigenschaften. */
+  /* Same for the other properties. */
 }
-item.publisher = 'Galileo Press';
+item.publisher = 'Rheinwerk Verlag';
 item.order = function() {
-  console.log('Das Buch wurde erfolgreich bestellt.');
+  console.log('The book has been ordered successfully.');
 }

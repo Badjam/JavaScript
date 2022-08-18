@@ -1,10 +1,11 @@
 'use strict';
 const todoList = [
-  'Bad putzen',           // Element an Index 0
-  'Einkaufen',            // Element an Index 1
-  'Aufräumen',            // Element an Index 2
-  'Rasen mähen'           // Element an Index 3
+  'Clean bathroom',         // element at index 0
+  'Go shopping',            // element at index 1
+  'Tidy up',                // element at index 2
+  'Mow lawn'                // element at index 3
 ];
+
 for (let i = 0; i < todoList.length; i++) {
   console.log(todoList[i]);
 }

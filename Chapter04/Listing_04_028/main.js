@@ -1,30 +1,29 @@
 'use strict';
 const item = {
   isbn: '',
-  _name: '',
-  /* Hier die anderen Eigenschaften */
+  _name: '', 
+  /* Here are the other properties. */
   set name(newName) {
     if(typeof newName === 'string') {
-      console.log('Neuen Namen setzen');
+      console.log('Set new name');
       this._name = newName;
     } else {
-      throw new TypeError('Name muss eine Zeichenkette sein.')
+      throw new TypeError('Name must be a string.')
     }
   },
   get name() {
-    console.log('Namen zurückgeben');
+    console.log('Return name');
     return this._name;
   }
-  /* Analog für die anderen Eigenschaften. */
+  /* Same for the other properties. */
 }
-// Dateneigenschaft
-item.isbn = '978-3-8362-7272-8';
+// Data property
+item.isbn = '978-1-4932-2286-5';
 console.log(item.isbn);
-
-// Möglich, aber nicht erwünscht, da der Zugriff über set und get erfolgen soll.
-item._name = 'Schrödinger programmiert Java';
+// Possible, but not desired, because access
+// is to take place using set and get.
+item._name = 'JavaScript: The Comprehensive Guide';
 console.log(item._name);
-
-// Zugriffseigenschaft
-item.name = 'Schrödinger programmiert Java - Das etwas andere Fachbuch';
+// Access property
+item.name = 'JavaScript: The Comprehensive Guide by Philip Ackermann';
 console.log(item.name);

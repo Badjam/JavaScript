@@ -1,10 +1,10 @@
 'use strict';
 const todoList = [
-  'Bad putzen',
-  'Einkaufen',
-  'Aufräumen',
-  'Rasen mähen'
+  'Clean bathroom',
+  'Go shopping',
+  'Tidy up',
+  'Mow lawn'
 ];
 const deletedTodos = todoList.splice(1, 2);
-console.log(deletedTodos);  // ["Einkaufen", "Aufräumen"]
-console.log(todoList);      // ["Bad putzen", "Rasen mähen"]
+console.log(deletedTodos);                // ["Go shopping", "Tidy up"]
+console.log(todoList);                    // ["Clean bathroom", "Mow lawn"]

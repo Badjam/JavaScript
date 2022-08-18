@@ -11,10 +11,10 @@ class Item {
   }
 }
 const item = new Item(
-  'Schrödinger programmiert Java',
-  44.90,
+  'JavaScript: The Comprehensive Guide', 
+  59.95, 
   'Philip Ackermann',
-  '978-3-8362-7272-8'
+  '978-1-4932-2286-5'
 )
 console.log(Item.prototype);              // Item {}
 console.log(item.__proto__);              // Item {}

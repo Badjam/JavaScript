@@ -1,4 +1,4 @@
 'use strict';
-const names = ['Max', 'Moritz', 'Peter'];
+const names = ['John', 'James', 'Peter'];
 names.reverse();
-console.log(names); // Ausgabe: Peter, Moritz, Max
+console.log(names); // Output: Peter, James, John
