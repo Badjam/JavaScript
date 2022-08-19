@@ -1,4 +1,4 @@
 'use strict';
-const name = 'John Doe';
-console.log(name.indexOf('M'));     // Ausgabe: 0
-console.log(name.indexOf('mann'));  // Ausgabe: 10
+const name = 'Max Mustermann';
+console.log(name.indexOf('M'));     // Output: 0 
+console.log(name.indexOf('mann'));  // Output: 10

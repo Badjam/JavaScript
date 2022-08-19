@@ -1,13 +1,13 @@
 'use strict';
 function checkUsername(userName) {
   if(userName.length < 5) {
-    console.error('Nutzername muss mindestens 5 Zeichen enthalten.');
+    console.error('Username must contain at least 5 characters.');
   } else if(userName.length > 8) {
-    console.error('Nutzername darf maximal 8 Zeichen enthalten.');
+    console.error('Username may contain a maximum of 8 characters.');
   } else {
-    console.log('Gültiger Nutzername');
+    console.log('Valid username');
   }
 }
-checkUsername('Max');             // Fehler, da zu kurz
-checkUsername('John Doe');  // Fehler, da zu lang
-checkUsername('MaxMuste');        // gültig
+checkUsername('Max');             // error, too short
+checkUsername('Max Mustermann');  // error, too long
+checkUsername('MaxMuste');        // valid

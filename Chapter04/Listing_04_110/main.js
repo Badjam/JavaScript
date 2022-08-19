@@ -1,17 +1,17 @@
 'use strict';
-const numbersOfAlbums = new Map();                    // Erstellen der Map
-numbersOfAlbums.set('Kyuss', 4);                    // Hinzufügen mehrerer Einträge
+const numbersOfAlbums = new Map();
+numbersOfAlbums.set('Kyuss', 4);
 numbersOfAlbums.set('Tool', 6);
 numbersOfAlbums.set('Monster Magnet', 8);
 numbersOfAlbums.set('Ben Harper', 9);
 numbersOfAlbums.set('Queens of the Stone Age', 6);
 
 for (let entry of numbersOfAlbums.entries()) {
-  console.log(entry[0]);                            // Schlüssel
-  console.log(entry[1]);                            // Wert
+  console.log(entry[0]);      // Key
+  console.log(entry[1]);      // Value
 }
-
-// Alternativ Zugriff über Array-Destructuring:
+ 
+// Alternative access via array destructuring:
 for (let [ bandName, numberOfAlbums ] of numbersOfAlbums.entries()) {
   console.log(bandName);
   console.log(numberOfAlbums);

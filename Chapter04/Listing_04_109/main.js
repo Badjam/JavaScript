@@ -1,6 +1,6 @@
 'use strict';
-const numbersOfAlbums = new Map();                    // Erstellen der Map
-numbersOfAlbums.set('Kyuss', 4);                    // Hinzufügen mehrerer Einträge
+const numbersOfAlbums = new Map();
+numbersOfAlbums.set('Kyuss', 4);
 numbersOfAlbums.set('Tool', 6);
 numbersOfAlbums.set('Monster Magnet', 8);
 numbersOfAlbums.set('Ben Harper', 9);

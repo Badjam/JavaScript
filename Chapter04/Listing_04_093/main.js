@@ -2,20 +2,22 @@
 function printContactInformation(
   {
     contact: {
-      email: email,
+      email: email, 
       phone: phone
-      }
     }
+  }
 ) {
-  console.log(`E-Mail: ${email}`);
-  console.log(`Telefon: ${phone}`);
+  console.log(`Email: ${email}`);
+  console.log(`Phone: ${phone}`);
 }
-const person = {
-  firstName: 'Max',
-  lastName: 'Mustermann',
+
+const person = { 
+  firstName: 'John', 
+  lastName: 'Doe', 
   contact: {
-    email: 'max.mustermann@javascripthandbuch.de',
+    email: 'john.doe@javascripthandbuch.de', 
     phone: '02345/23456789'
   }
 };
+
 printContactInformation(person);

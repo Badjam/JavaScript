@@ -8,22 +8,22 @@ const artists = new Set(
     'Queens of the Stone Age'
   ]
 );
-// Ausgabe: "Kyuss", "Tool", "Monster Magnet", "Ben Harper", "Queens of the
+// Output: "Kyuss", "Tool", "Monster Magnet", "Ben Harper", "Queens of the 
 // Stone Age"
 for (let artist of artists.keys()) {
   console.log(artist);
 }
-// Ausgabe: "Kyuss", "Tool", "Monster Magnet", "Ben Harper", "Queens of the
+// Output: "Kyuss", "Tool", "Monster Magnet", "Ben Harper", "Queens of the 
 // Stone Age"
 for (let artist of artists.values()) {
   console.log(artist);
-}
+} 
 for (let artist of artists.entries()) {
-  console.log(artist[0]); // Wert, z. B. "Kyuss"
-  console.log(artist[1]); // Wert, z. B. "Kyuss"
+  console.log(artist[0]);  // value, e.g. "Kyuss"
+  console.log(artist[1]);  // value, e.g. "Kyuss"
 }
-// Ausgabe: "Kyuss", "Tool", "Monster Magnet", "Ben Harper",
-// "Queens of the Stone Age"
+// Output: "Kyuss", "Tool", "Monster Magnet", "Ben Harper", "Queens of the 
+// Stone Age"
 for (let artist of artists) {
   console.log(artist);
 }

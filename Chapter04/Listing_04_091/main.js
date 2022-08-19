@@ -1,24 +1,25 @@
 'use strict';
 const persons = [
   {
-    firstName: 'Max',
-    lastName: 'Mustermann',
+    firstName: 'John', 
+    lastName: 'Doe', 
     contact: {
-      email: 'max.mustermann@javascripthandbuch.de',
+      email: 'john.doe@javascripthandbuch.de', 
       phone: '02345/23456789'
     }
-  },
+  }, 
   {
-    firstName: 'Maxi',
-    lastName: 'Musterfrau',
+    firstName: 'Jane', 
+    lastName: 'Smith', 
     contact: {
-      email: 'maxi.musterfrau@javascripthandbuch.de',
+      email: 'jane.smith@javascripthandbuch.de', 
       phone: '02345/23456789'
     }
   }
 ];
+
 for (let {firstName:f, lastName:l, contact:{email:e, phone:p}} of persons) {
   console.log(`${f} ${l}`);
-  console.log(`E-Mail: ${e}`);
-  console.log(`Telefon: ${p}`);
+  console.log(`Email: ${e}`);
+  console.log(`Phone: ${p}`);
 }

@@ -1,7 +1,7 @@
 'use strict';
 const button = {
   handler : null,
-// Funktion, die einen Callback-Handler erwartet
+  // Function that expects a callback handler
   onClick : function(handler) {
     this.handler = handler;
   },
@@ -9,17 +9,19 @@ const button = {
     this.handler();
   }
 };
+
 const handler = {
-  log: function() {
-    console.log("Button geklickt.");
+  log : function() {
+    console.log("Button clicked.");
   },
-// Objektmethode, die weiter unten als Callback-Handler registriert wird
+  // Object method registered as a callback handler further below
   handle: function() {
     this.log();
   }
 }
-// Registrieren des Callback-Handlers
+// Register callback handler
 const boundFunction = handler.handle.bind(handler);
 button.onClick(boundFunction);
-// Implizites Aktivieren des Callback-Handlers
+
+// Implicit activation of the callback handler
 button.click();

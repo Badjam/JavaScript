@@ -17,19 +17,19 @@ const artist5 = {
 const artist6 = {
   name: 'Justin Bieber'
 };
+
 const artists = new WeakSet(
   [
-    artist1,
+    artist1, 
     artist2,
     artist3,
     artist4,
     artist5
   ]
 );
-console.log(artists.has(artist1));  // Ausgabe: true
-artists.delete(artist1);            // Löschen eines Wertes
-console.log(artists.has(artist1));  // Ausgabe: false
-console.log(
-  artists.has(artist6)              // Ausgabe: false
-);
+console.log(artists.has(artist1));  // Output: true
+artists.delete(artist1);            // Delete a value
+console.log(artists.has(artist1));  // Output: false
+console.log(artists.has(artist6));  // Output: false
+
 console.log(artists);

@@ -1,21 +1,23 @@
 'use strict';
-const firstName = 'Max';
-const lastName = 'Mustermann';
+const firstName = 'John';
+const lastName = 'Doe';
 const properties = {
   age: 33,
   hairColor: 'brown',
   height: 1.8
 };
+
 const person = {
   firstName,
   lastName,
   ...properties
 };
+
 console.log(person);
 // {
-// firstName: 'Max',
-// lastName: 'Mustermann',
-// age: 33,
-// hairColor: 'brown',
-// height: 1.8
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: 33,
+//   hairColor: 'brown',
+//   height: 1.8
 // }

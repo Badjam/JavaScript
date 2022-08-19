@@ -1,4 +1,4 @@
 'use strict';
-const regExp = /\Bspiele\B/;
-console.log(regExp.test('Ich spiele E-Gitarre.'));              // false
-console.log(regExp.test('Ich bin ein Schallplattenspieler.'));  // true
+const regExp = /\Bplay\B/;
+console.log(regExp.test('I play the electric guitar.'));   // false 
+console.log(regExp.test('I am a teamplayer.'));            // true

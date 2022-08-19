@@ -1,13 +1,23 @@
 'use strict';
 function sayHello() {
-  console.log('Hallo');
+  console.log('Hello');
   return function() {
-    console.log('Welt');
+    console.log('World');
     return function() {
-      console.log('Mein Name ist John Doe.');
+      console.log('My name is John Doe.');
     }
   }
 }
-sayHello();      // Aufruf der »äußeren« Funktion
-sayHello()();    // Aufruf der »äußeren« und der »mittleren« Funktion
-sayHello()()();  // Aufruf aller Funktionen
+
+sayHello();      // Calling the "outer" function
+                 // Output: 
+                 // "Hello"
+sayHello()();    // Calling the "outer" and "middle" functions
+                 // Output:
+                 // "Hello"
+                 // "World"
+sayHello()()();  // Calling all functions 
+                 // Output:
+                 // "Hello"
+                 // "World"
+                 // "My name is John Doe."

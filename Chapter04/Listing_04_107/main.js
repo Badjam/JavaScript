@@ -1,6 +1,6 @@
 'use strict';
-const numbersOfAlbums = new Map(                // Erstellen einer Map ...
-  [                                           // ... auf Basis eines Arrays
+const numbersOfAlbums = new Map(    // Create a map ...
+  [                                 // ... based on an array
     ['Kyuss', 4],
     ['Tool', 6],
     ['Monster Magnet', 8],
@@ -8,6 +8,6 @@ const numbersOfAlbums = new Map(                // Erstellen einer Map ...
     ['Queens of the Stone Age', 6]
   ]
 );
-for (const album of numbersOfAlbums.keys()) {
-  console.log(album);
+for (let artist of numbersOfAlbums.keys()) {
+  console.log(artist);
 }

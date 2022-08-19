@@ -1,5 +1,5 @@
 'use strict';
-const regExp = /^Streuselkuchen$/;
-console.log(regExp.test('Streuselkuchen'));         // true
-console.log(regExp.test('Der Streuselkuchen'));     // false
-console.log(regExp.test('Streuselkuchengeschäft')); // false
+const regExp = /^Southampton$/;
+console.log(regExp.test('Southampton'));                   // true
+console.log(regExp.test('In Southampton'));                // false
+console.log(regExp.test('Southampton Port'));              // false

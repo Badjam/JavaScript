@@ -1,19 +1,20 @@
 'use strict';
-// Definition der Funktion, die als Argument eine andere Funktion erwartet
+// Definition of the function that expects another function as an argument
 function function1(f) {
-  console.log('Funktion 1 Start'); // Aufruf der übergebenen Funktion
+  console.log('Function 1 start'); // Calling the passed function
   f();
-  console.log('Funktion 1 Ende');
+  console.log('Function 1 end');
 }
 function function2() {
-  console.log('Funktion 2 Start');
-  console.log('Funktion 2 Ende');
+  console.log('Function 2 start');
+  console.log('Function 2 end');
 }
-// Aufruf mit einer Funktion über deren Namen
+// Call with a function using its name
 function1(function2);
-// function1(function2()); // Das funktioniert nicht.
-// Aufruf mit einer anonymen Funktion als Argument
+// function1(function2());        // This does not work.
+
+// Call with an anonymous function as an argument
 function1(function() {
-  console.log('Anonyme Funktion Start');
-  console.log('Anonyme Funktion Ende');
+  console.log('Anonymous function start');
+  console.log('Anonymous function end');
 });
