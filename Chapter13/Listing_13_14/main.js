@@ -16,7 +16,7 @@ function VegetarianDog(name, color, age, type) {
 
 VegetarianDog.prototype.eat = function(food) {
   if(food.indexOf('meat') >= 0 || food.indexOf('meat') >= 0) {
-    throw new Error('I don't eat meat!');
+    throw new Error('I don`t eat meat!');
   } else {
     console.log('Chow chow, ' + food);
   }

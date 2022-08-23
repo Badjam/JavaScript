@@ -21,7 +21,7 @@ dog.bark = function() {
 const vegetarianDog = Object.create(dog);
 vegetarianDog.eat = function(food) {
   if(food.indexOf('meat') >= 0 || food.indexOf('meat') >= 0) {
-    throw new Error('I don't eat meat!');
+    throw new Error('I don`t eat meat!');
   } else {
     Object.getPrototypeOf(this).eat.call(this, food);
   }

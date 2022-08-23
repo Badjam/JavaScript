@@ -1,12 +1,12 @@
 function checkAgeNotNegative(age) {
   if(age < 0) {
-    showMessage('Alter kann nicht negativ sein.');
+    showMessage('Age cannot be negative.');
   }
 }
 
 function checkAgeIsNumber(age) {
   if(!(!isNaN(parseFloat(age)) && isFinite(age))) {
-    showMessage('Alter muss Zahl sein.');
+    showMessage('Age must be a number.');
   }
 }
 

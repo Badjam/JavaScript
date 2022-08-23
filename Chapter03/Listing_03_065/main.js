@@ -1,13 +1,15 @@
 'use strict';
 if(condition1) {
-// Programmzweig, der ausgeführt wird, falls Bedingung 1 erfüllt ist
-} else if(condition2) {
-// Programmzweig, der ausgeführt wird, falls Bedingung 2 erfüllt ist
-} else if(condition3) {
-// Programmzweig, der ausgeführt wird, falls Bedingung 3 erfüllt ist
-} else if(condition4) {
-// Programmzweig, der ausgeführt wird, falls Bedingung 4 erfüllt ist
-} else {
-// Programmzweig, der ausgeführt wird, falls keine der vorherigen ...
-// ... Bedingungen erfüllt ist
-}
+    // Program branch that will be executed if condition 1 is met
+  } else if(condition2) {
+    // Program branch that will be executed if condition 2 is met
+  } else if(condition3) {
+    // Program branch that will be executed if condition 3 is met
+  } else if(condition4) {
+    // Program branch that will be executed if condition 4 is met
+  } else {
+    // Program branch that will be executed if none of the previous ...
+    // ... conditions is met
+  
+  }
+  
